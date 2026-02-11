@@ -1,0 +1,89 @@
+INFO  [14:18:31.827] [bbotk] Starting to optimize 8 parameter(s) with '<OptimizerMbo>' and '<TerminatorRunTime> [secs=20]'
+INFO  [14:18:31.996] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 100 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:32.614] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 101 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:33.116] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:33.126] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:35.256] [mlr3] Finished benchmark
+INFO  [14:18:35.325] [bbotk] Result of batch 2:
+INFO  [14:18:35.328] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:35.328] [bbotk]      0.0000000         39               23        0.8559563       FALSE -4.845064 -5.015441         -5.136162 -6.992820 2026-01-29 14:18:31    2026-01-29 14:18:32     2026-01-29 14:18:32 2026-01-29 14:18:32 0.005319357        0      0            1.402     num_iterations=10
+INFO  [14:18:35.328] [bbotk]     -0.2840255         47               21        0.3553733       FALSE -4.679598 -1.563088         -3.842573 -6.806728 2026-01-29 14:18:32    2026-01-29 14:18:32     2026-01-29 14:18:32 2026-01-29 14:18:33 0.004696317        0      0            1.065     num_iterations=28
+INFO  [14:18:35.414] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 102 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:36.164] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 103 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:36.576] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:36.583] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:37.279] [mlr3] Finished benchmark
+INFO  [14:18:37.329] [bbotk] Result of batch 3:
+INFO  [14:18:37.330] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:37.330] [bbotk]     -0.2895359         43               21        0.8687085       FALSE -4.526888 -1.289904         -3.624387 -7.333679 2026-01-29 14:18:35    2026-01-29 14:18:35     2026-01-29 14:18:35 2026-01-29 14:18:36 0.005632837        0      0            0.916      num_iterations=9
+INFO  [14:18:37.330] [bbotk]      0.0000000         45               21        0.3383816       FALSE -4.930814 -2.325566         -5.114509 -7.312288 2026-01-29 14:18:36    2026-01-29 14:18:36     2026-01-29 14:18:36 2026-01-29 14:18:36 0.005320337        0      0            1.016     num_iterations=27
+INFO  [14:18:37.407] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 104 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:37.949] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 105 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:38.442] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:38.451] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:39.169] [mlr3] Finished benchmark
+INFO  [14:18:39.220] [bbotk] Result of batch 4:
+INFO  [14:18:39.222] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:39.222] [bbotk]     -0.3212109         10               22        0.4647336       FALSE -3.956707 -1.437883         -4.033351 -7.317137 2026-01-29 14:18:37    2026-01-29 14:18:37     2026-01-29 14:18:37 2026-01-29 14:18:37 0.004380878        0      0            0.974     num_iterations=33
+INFO  [14:18:39.222] [bbotk]     -0.2538545         29                1        0.8314843       FALSE -4.548174  5.693130         -4.303992 -7.052607 2026-01-29 14:18:37    2026-01-29 14:18:37     2026-01-29 14:18:37 2026-01-29 14:18:38 0.012209052        0      0            1.240    num_iterations=165
+INFO  [14:18:39.303] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 106 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:39.827] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 107 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:40.271] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:40.281] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:40.995] [mlr3] Finished benchmark
+INFO  [14:18:41.048] [bbotk] Result of batch 5:
+INFO  [14:18:41.050] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:41.050] [bbotk]     -0.2651047        175               22        0.3635419       FALSE -5.991411 -1.690269          -3.98247 -6.821704 2026-01-29 14:18:39    2026-01-29 14:18:39     2026-01-29 14:18:39 2026-01-29 14:18:39 0.004696317        0      0            1.306     num_iterations=29
+INFO  [14:18:41.050] [bbotk]     -0.2993243         10               24        0.7731730       FALSE -5.434464 -1.728146          -4.42184 -7.068160 2026-01-29 14:18:39    2026-01-29 14:18:39     2026-01-29 14:18:39 2026-01-29 14:18:40 0.004694357        0      0            0.662     num_iterations=18
+INFO  [14:18:41.147] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 108 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:41.855] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 109 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:42.271] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:42.279] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:42.817] [mlr3] Finished benchmark
+INFO  [14:18:42.870] [bbotk] Result of batch 6:
+INFO  [14:18:42.872] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:42.872] [bbotk]     -0.3304624        126               25        0.7551960        TRUE -3.174496 -1.534111         -4.662955 -7.118431 2026-01-29 14:18:41    2026-01-29 14:18:41     2026-01-29 14:18:41 2026-01-29 14:18:41 0.004693378        0      0            0.753     num_iterations=17
+INFO  [14:18:42.872] [bbotk]     -0.3121351         10               22        0.8060494       FALSE -3.746008 -1.946878         -4.161576 -7.385400 2026-01-29 14:18:41    2026-01-29 14:18:41     2026-01-29 14:18:41 2026-01-29 14:18:42 0.004380878        0      0            0.658     num_iterations=14
+INFO  [14:18:42.950] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 110 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:43.485] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 111 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:43.962] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:43.971] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:44.609] [mlr3] Finished benchmark
+INFO  [14:18:44.672] [bbotk] Result of batch 7:
+INFO  [14:18:44.674] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:44.674] [bbotk]     -0.3304624         42               19        0.4731252       FALSE -3.616506 -1.165740         -4.222015 -7.271061 2026-01-29 14:18:42    2026-01-29 14:18:42     2026-01-29 14:18:42 2026-01-29 14:18:43 0.005319357        0      0            1.009     num_iterations=19
+INFO  [14:18:44.674] [bbotk]     -0.3140758         10               22        0.7533701       FALSE -6.351754 -1.322462         -6.521154 -7.348550 2026-01-29 14:18:43    2026-01-29 14:18:43     2026-01-29 14:18:43 2026-01-29 14:18:43 0.004068378        0      0            0.837     num_iterations=23
+INFO  [14:18:44.761] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 112 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:45.340] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 113 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:45.870] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:45.882] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:46.680] [mlr3] Finished benchmark
+INFO  [14:18:46.740] [bbotk] Result of batch 8:
+INFO  [14:18:46.742] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:46.742] [bbotk]     -0.3304624         16               53        0.3595458       FALSE -4.899181 -1.619119         -6.894766 -6.992617 2026-01-29 14:18:44    2026-01-29 14:18:44     2026-01-29 14:18:44 2026-01-29 14:18:45 0.005632837        0      0            1.205     num_iterations=29
+INFO  [14:18:46.742] [bbotk]     -0.3077392         10               26        0.4398913       FALSE -6.391388 -1.661008         -6.907755 -7.328111 2026-01-29 14:18:45    2026-01-29 14:18:45     2026-01-29 14:18:45 2026-01-29 14:18:45 0.004693378        0      0            1.187     num_iterations=32
+INFO  [14:18:46.882] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 114 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:47.668] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 115 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:48.382] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:48.392] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:49.098] [mlr3] Finished benchmark
+INFO  [14:18:49.188] [bbotk] Result of batch 9:
+INFO  [14:18:49.193] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1  lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:49.193] [bbotk]              0         10               25        0.7456051        TRUE  6.888414 -1.4716431         -4.794948 -7.143625 2026-01-29 14:18:46    2026-01-29 14:18:46     2026-01-29 14:18:46 2026-01-29 14:18:47 0.477784091        0      0            0.803      num_iterations=1
+INFO  [14:18:49.193] [bbotk]              0         11               26        0.7537034       FALSE -3.509415 -0.2827907         -2.568247 -6.724616 2026-01-29 14:18:47    2026-01-29 14:18:47     2026-01-29 14:18:47 2026-01-29 14:18:48 0.006257837        0      0            0.967     num_iterations=13
+INFO  [14:18:49.317] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 116 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:50.182] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 117 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:50.661] [bbotk] Evaluating 2 configuration(s)
+INFO  [14:18:50.669] [mlr3] Running benchmark with 20 resampling iterations
+INFO  [14:18:51.332] [mlr3] Finished benchmark
+INFO  [14:18:51.397] [bbotk] Result of batch 10:
+INFO  [14:18:51.399] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate timestamp_acq_function timestamp_acq_optimizer      timestamp_loop  classif.ce warnings errors runtime_learners internal_tuned_values
+INFO  [14:18:51.399] [bbotk]     -0.3241153         10               24        0.6798502        TRUE -3.865168 -1.436121         -6.903171 -7.348646 2026-01-29 14:18:49    2026-01-29 14:18:49     2026-01-29 14:18:49 2026-01-29 14:18:50 0.004692398        0      0            0.919     num_iterations=20
+INFO  [14:18:51.399] [bbotk]     -0.2301099         10               23        0.7469447       FALSE -6.660423 -1.417405         -6.583775 -7.213033 2026-01-29 14:18:50    2026-01-29 14:18:50     2026-01-29 14:18:50 2026-01-29 14:18:50 0.004380878        0      0            0.808     num_iterations=17
+INFO  [14:18:51.493] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 118 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:52.105] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 119 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [14:18:52.654] [bbotk] Finished optimizing after 118 evaluation(s)
+INFO  [14:18:52.654] [bbotk] Result:
+INFO  [14:18:52.656] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees lambda_l1 lambda_l2 min_gain_to_split internal_tuned_values learner_param_vals  x_domain  classif.ce
+INFO  [14:18:52.656] [bbotk]          <num>      <int>            <int>            <num>      <lgcl>     <num>     <num>             <num>                <list>             <list>    <list>       <num>
+INFO  [14:18:52.656] [bbotk]     -0.3140758         10               22        0.7533701       FALSE -6.351754 -1.322462         -6.521154     num_iterations=23         <list[12]> <list[8]> 0.004068378
