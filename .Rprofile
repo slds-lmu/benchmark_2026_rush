@@ -1,0 +1,5 @@
+options("datatable.print.nrows" = 1000)
+options("datatable.print.class" = TRUE)
+options("install.opts" = "--without-keep.source")
+options("renv.config.pak.enabled" = TRUE)
+options("mlr3oml.cache" = ".oml_cache/")

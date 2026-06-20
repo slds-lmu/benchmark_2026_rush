@@ -1,8 +1,8 @@
-module load tmux redis
-conda activate r45
+# module load tmux redis
+source ~/.conda_init
+conda activate benchmark_2026_rush
 
-export PATH="$HOME/local/bin:$PATH"
-export PATH="/dss/dsshome1/00/ra98ror2/mlr-benchmark:$PATH"
+export PATH="/dss/dsshome1/00/ra98ror2/benchmark_2026_rush:$PATH"
 
 alias sq='squeue -M cm4'
 alias sc='scancel -M cm4'

@@ -45,7 +45,9 @@ cl_mbo = function(task, learner, resampling, measure, terminator, initial_design
   tuner = tnr("mbo",
     loop_function = bayesopt_mpcl,
     initial_design = initial_design,
+    args = list(q = max(2, floor    initial_design = initial_design,
     args = list(q = max(2, floor(n_workers / 10)))
+(n_workers / 10)))
   )
 
   tuner$optimize(instance)
@@ -117,8 +119,6 @@ results = pmap(list(otask_id = c(31L, 3945L, 7592L, 189354L), initial_design = i
     min_data_in_leaf  = to_tune(1, 200),
     num_leaves        = to_tune(10, 255),
     extra_trees       = to_tune(),
-    #bagging_fraction  = to_tune(0, 1),
-    #bagging_freq      = to_tune(0, 10),
     lambda_l1         = to_tune(1e-3, 1e3, logscale = TRUE),
     lambda_l2         = to_tune(1e-3, 1e3, logscale = TRUE),
     min_gain_to_split = to_tune(1e-3, 0.1, logscale = TRUE),

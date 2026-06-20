@@ -1,7 +1,7 @@
-nohup hq server start --journal rush_paper_2026 &
+nohup hq server start --journal benchmark_2026_rush &
 
 hq alloc add slurm \
-  --worker-start-cmd "source /dss/dsshome1/00/ra98ror2/paper_2026_rush/load_env.sh" \
+  --worker-start-cmd "source /dss/dsshome1/00/ra98ror2/benchmark_2026_rush/load_env.sh" \
   --time-limit 24h \
   --cpus 112 \
   --backlog 25 \
@@ -15,10 +15,9 @@ hq alloc add slurm \
   --export=NONE
 
 hq server stop
-rm rush_paper_2026
+rm benchmark_2026_rush
 rm nohup.out
 
-redis-server --protected-mode no --save "" --appendonly no
 
 source("/dss/dsshome1/00/ra98ror2/paper_2026_rush/launch.R")
 

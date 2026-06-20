@@ -31,8 +31,6 @@ initial_designs = set_names(map(c(31L, 3945L, 7592L, 189354L), function(otask_id
     min_data_in_leaf  = to_tune(1, 200),
     num_leaves        = to_tune(10, 255),
     extra_trees       = to_tune(),
-    #bagging_fraction  = to_tune(0, 1),
-    #bagging_freq      = to_tune(0, 10),
     lambda_l1         = to_tune(1e-3, 1e3, logscale = TRUE),
     lambda_l2         = to_tune(1e-3, 1e3, logscale = TRUE),
     min_gain_to_split = to_tune(1e-3, 0.1, logscale = TRUE),
