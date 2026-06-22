@@ -49,4 +49,3 @@ batchMap(function(n_tasks, n_parameters, payload_size, .job) {
 ), reg = reg)
 
 submitJobs(resources = list(ncpus = 2L, walltime = 3600L))
-waitForJobs()
