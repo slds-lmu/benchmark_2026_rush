@@ -1,5 +1,3 @@
-renv::load(".")
-
 library(batchtools)
 library(data.table)
 
