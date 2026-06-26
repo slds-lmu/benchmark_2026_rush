@@ -34,21 +34,21 @@ renv::load(".")
 renv::install(
   "mlr-org/rush",
   "microbenchmark",
-  "mlr-org/batchtools"
-  # "mlr-org/mlr3mbo@cmbo",
-  # "mlr-org/bbotk",
-  # "mlr-org/mlr3tuning",
-  # "mlr3oml",
-  # "ranger",
-  # "mlr3learners",
-  # "rgenoud",
-  # "DiceKriging",
-  # "mlr3",
-  # "rpart",
-  # "mlr3learners",
-  # "xgboost",
-  # "mlr-org/mlr3extralearners",
-  # "lightgbm",
-  # "qs2"
+  "mlr-org/batchtools",
+  "mlr-org/mlr3mbo",
+  "mlr-org/bbotk",
+  "mlr-org/mlr3tuning",
+  "mlr3oml",
+  "ranger",
+  "mlr3learners",
+  "rgenoud",
+  "DiceKriging",
+  "mlr3",
+  "rpart",
+  "mlr3learners",
+  "xgboost",
+  "mlr-org/mlr3extralearners",
+  "lightgbm",
+  "qs2"
 )
 EOF
