@@ -1,0 +1,13 @@
+task_id,algorithm,runtime_learners,runtime_surrogate,runtime_optimizer,mean_runtime_learners,walltime,cpu_hours,evals,performance,utilization
+german-credit,cl_mbo,272,180,361,1,578,72,440,0.18,0.0031
+german-credit,central_mbo,243,209,382,1,591,74,468,0.19,0.0031
+german-credit,async_mbo,10625,212896,28969,1,594,74,15958,0.18,0.95
+kddcup09-appetency,cl_mbo,3705,28,102,28,758,94,132,0.018,0.011
+kddcup09-appetency,central_mbo,11186,205,387,25,593,74,432,0.018,0.044
+kddcup09-appetency,async_mbo,210979,31949,8365,33,596,74,6201,0.017,0.94
+adult,cl_mbo,3177,109,269,10,560,70,308,0.12,0.014
+adult,central_mbo,5246,210,381,12,589,73,431,0.12,0.022
+adult,async_mbo,135330,104126,14816,13,594,74,10375,0.12,0.96
+airlines,cl_mbo,29130,20,77,331,693,86,88,0.32,0.094
+airlines,central_mbo,77656,204,388,170,593,74,276,0.32,0.29
+airlines,async_mbo,263658,445,725,205,595,74,648,0.32,0.99

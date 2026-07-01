@@ -1,0 +1,1010 @@
+Waiting for workers to connect... 35/448
+Waiting for workers to connect... 43/448
+Waiting for workers to connect... 52/448
+Waiting for workers to connect... 58/448
+Waiting for workers to connect... 63/448
+Waiting for workers to connect... 70/448
+Waiting for workers to connect... 76/448
+Waiting for workers to connect... 83/448
+Waiting for workers to connect... 93/448
+Waiting for workers to connect... 101/448
+Waiting for workers to connect... 106/448
+Waiting for workers to connect... 115/448
+Waiting for workers to connect... 121/448
+Waiting for workers to connect... 128/448
+Waiting for workers to connect... 136/448
+Waiting for workers to connect... 147/448
+Waiting for workers to connect... 156/448
+Waiting for workers to connect... 163/448
+Waiting for workers to connect... 172/448
+Waiting for workers to connect... 180/448
+Waiting for workers to connect... 192/448
+Waiting for workers to connect... 202/448
+Waiting for workers to connect... 212/448
+Waiting for workers to connect... 221/448
+Waiting for workers to connect... 231/448
+Waiting for workers to connect... 242/448
+Waiting for workers to connect... 255/448
+Waiting for workers to connect... 268/448
+Waiting for workers to connect... 286/448
+Waiting for workers to connect... 295/448
+Waiting for workers to connect... 306/448
+Waiting for workers to connect... 316/448
+Waiting for workers to connect... 327/448
+Waiting for workers to connect... 342/448
+Waiting for workers to connect... 357/448
+Waiting for workers to connect... 378/448
+Waiting for workers to connect... 393/448
+Waiting for workers to connect... 413/448
+Waiting for workers to connect... 431/448
+Waiting for workers to connect... 448/448
+INFO  [15:24:41.285] [rush] Starting 448 worker(s)
+INFO  [15:24:47.648] [rush] 5 worker(s) registered
+INFO  [15:24:47.653] Starting to optimize 8 parameter(s) with '<OptimizerAsyncMboCentral>' and '<TerminatorRunTime> [secs=600]' on 448 mirai worker(s)
+INFO  [15:24:48.687] 444 worker(s) running
+INFO  [15:24:48.740] Results of 100 configuration(s):
+INFO  [15:24:48.751]  classif.ce learning_rate num_leaves min_data_in_leaf feature_fraction
+INFO  [15:24:48.751]   0.1298064   -5.42826692        236               79        0.8490685
+INFO  [15:24:48.751]   0.2392818   -5.93203654        230               57        0.2095628
+INFO  [15:24:48.751]   0.1369313   -4.22612333        162              169        0.4473329
+INFO  [15:24:48.751]   0.2392818   -4.57937953        181              188        0.5639561
+INFO  [15:24:48.751]   0.1623602   -1.19588179         34              180        0.2414728
+INFO  [15:24:48.751]   0.1339217   -2.98197288        165              167        0.5673638
+INFO  [15:24:48.751]   0.1310143   -0.08754650        118              134        0.9261452
+INFO  [15:24:48.751]   0.1294583   -0.24393179        248                9        0.2410828
+INFO  [15:24:48.751]   0.1366447   -3.74808409        165              113        0.4783633
+INFO  [15:24:48.751]   0.1260392   -1.21564980        250              147        0.6709220
+INFO  [15:24:48.751]   0.2392818   -5.75445890         32               93        0.7754120
+INFO  [15:24:48.751]   0.1264895   -2.05425692        151               21        0.7130646
+INFO  [15:24:48.751]   0.1321608   -3.49304623         83               20        0.6295601
+INFO  [15:24:48.751]   0.1274518   -2.95345363         97              138        0.2945102
+INFO  [15:24:48.751]   0.1300931   -3.22203534         96              133        0.8245925
+INFO  [15:24:48.751]   0.1446093   -4.74490127        110              190        0.3330599
+INFO  [15:24:48.751]   0.1371975   -3.68872473         48               91        0.7750264
+INFO  [15:24:48.751]   0.1262439   -2.50992270        249              129        0.8161146
+INFO  [15:24:48.751]   0.1419476   -4.79140097        143              195        0.5488530
+INFO  [15:24:48.751]   0.2392818   -5.97011318        176               85        0.3848016
+INFO  [15:24:48.751]   0.1269400   -1.19778370        143              199        0.9890913
+INFO  [15:24:48.751]   0.1305229   -0.45129181         92              125        0.8483590
+INFO  [15:24:48.751]   0.1358052   -0.08807794        252               66        0.6061451
+INFO  [15:24:48.751]   0.2392818   -6.13979657         58              149        0.3628348
+INFO  [15:24:48.751]   0.1440564   -2.49896256         87              182        0.2150410
+INFO  [15:24:48.751]   0.1466975   -0.83609720         75               95        0.8553157
+INFO  [15:24:48.751]   0.1248311   -4.09456851        119               24        0.7305060
+INFO  [15:24:48.751]   0.1258753   -2.11036770         40               90        0.2787503
+INFO  [15:24:48.751]   0.1358462   -3.42716225         62              138        0.7887110
+INFO  [15:24:48.751]   0.2392818   -6.70108560         92              175        0.4070376
+INFO  [15:24:48.751]   0.1342697   -2.39037196        161               49        0.5764290
+INFO  [15:24:48.751]   0.1260801   -2.30112900        104              182        0.8414705
+INFO  [15:24:48.751]   0.1339830   -3.95763344         17              120        0.8980837
+INFO  [15:24:48.751]   0.2392818   -5.54336880        171               49        0.5129823
+INFO  [15:24:48.751]   0.1304206   -0.71792654        194               59        0.8116358
+INFO  [15:24:48.751]   0.1313214   -0.50720223        167               35        0.7040945
+INFO  [15:24:48.751]   0.1331846   -3.54985831        204               45        0.3391940
+INFO  [15:24:48.751]   0.2392818   -5.91033786        186              151        0.3998602
+INFO  [15:24:48.751]   0.2392818   -5.89242237        204              196        0.1667237
+INFO  [15:24:48.751]   0.1267557   -1.35127777        179               42        0.6686710
+INFO  [15:24:48.751]   0.1264077   -2.00569106        107               28        0.9358317
+INFO  [15:24:48.751]   0.1456533   -3.85693573        199               42        0.5971927
+INFO  [15:24:48.751]   0.1400435   -2.88383886         63               87        0.4162712
+INFO  [15:24:48.751]   0.1351500   -4.07605724        115               74        0.7446369
+INFO  [15:24:48.751]   0.1265305   -1.85818309        213              112        0.6385182
+INFO  [15:24:48.751]   0.2392818   -6.13839855        210              106        0.6062000
+INFO  [15:24:48.751]   0.2392818   -6.76921982        162               52        0.5043103
+INFO  [15:24:48.751]   0.2392818   -5.82116978         71              177        0.9566731
+INFO  [15:24:48.751]   0.1386308   -4.28833968        164              110        0.4500056
+INFO  [15:24:48.751]   0.2392818   -5.04491331         83               22        0.3781899
+INFO  [15:24:48.751]   0.1273289   -5.02254726        169               71        0.9328380
+INFO  [15:24:48.751]   0.1316081   -1.87063884        178              200        0.9965281
+INFO  [15:24:48.751]   0.1268376   -1.39487349        182              193        0.4711301
+INFO  [15:24:48.751]   0.1338398   -0.92281976        163              147        0.1524335
+INFO  [15:24:48.751]   0.1354367   -4.41410597        218               55        0.4026154
+INFO  [15:24:48.751]   0.1262029   -0.85641575        208               37        0.7034861
+INFO  [15:24:48.751]   0.1342289   -2.14307862        177               64        0.1703258
+INFO  [15:24:48.751]   0.1284345   -4.53564031         84               68        0.3198318
+INFO  [15:24:48.751]   0.1512223   -3.92425417        112               82        0.4036880
+INFO  [15:24:48.751]   0.1266738   -4.07846883        231              163        0.6661590
+INFO  [15:24:48.751]   0.1281889   -0.02910330        196               51        0.1587530
+INFO  [15:24:48.751]   0.1580811   -3.19186962         90              136        0.5389319
+INFO  [15:24:48.751]   0.1384259   -1.65434825         49              145        0.8249049
+INFO  [15:24:48.751]   0.1342698   -0.85203242        231              145        0.5877526
+INFO  [15:24:48.751]   0.2392818   -5.75743767        107               75        0.7908202
+INFO  [15:24:48.751]   0.1284755   -5.02164763        251              152        0.5323189
+INFO  [15:24:48.751]   0.2392818   -5.60486259        235               46        0.2165774
+INFO  [15:24:48.751]   0.1283322   -4.68183719        100              131        0.8943519
+INFO  [15:24:48.751]   0.1330822   -2.54461922        226               43        0.3887522
+INFO  [15:24:48.751]   0.1240941   -1.22139500         20              146        0.7265089
+INFO  [15:24:48.751]   0.1507105   -0.70063123        207               33        0.4683787
+INFO  [15:24:48.751]   0.1254249   -2.73244195        115               47        0.4559218
+INFO  [15:24:48.751]   0.1331846   -0.64146020        149              158        0.6394462
+INFO  [15:24:48.751]   0.2392818   -5.39523732        236              100        0.5909506
+INFO  [15:24:48.751]   0.1562589   -3.52003465         46              182        0.3703957
+INFO  [15:24:48.751]   0.1460833   -1.93673627        219               16        0.9661280
+INFO  [15:24:48.751]   0.1273290   -1.36787391         92              171        0.5713664
+INFO  [15:24:48.751]   0.1313419   -1.12659881        193               47        0.6902356
+INFO  [15:24:48.751]   0.1265715   -3.56442348        210              198        0.7073858
+INFO  [15:24:48.751]   0.1262029   -3.63325443        175               86        0.4912843
+INFO  [15:24:48.751]   0.1260801   -2.77083635        123              145        0.5364698
+INFO  [15:24:48.751]   0.2392818   -6.47943460        214               83        0.3087901
+INFO  [15:24:48.751]   0.2392818   -5.41749106        190               40        0.9092497
+INFO  [15:24:48.751]   0.2392818   -5.29005987         48              110        0.7173499
+INFO  [15:24:48.751]   0.1287622   -3.48273575        197              123        0.2636887
+INFO  [15:24:48.751]   0.1763236   -0.40920674         64              105        0.5596075
+INFO  [15:24:48.751]   0.1371771   -3.12109707        254               86        0.8168399
+INFO  [15:24:48.751]   0.1383441   -2.92643611         42               13        0.4455154
+INFO  [15:24:48.751]   0.1259368   -2.62095007        131               13        0.2836148
+INFO  [15:24:48.751]   0.2392818   -6.15301114        125               19        0.3751577
+INFO  [15:24:48.751]   0.1334917   -1.09748118        240              178        0.9233656
+INFO  [15:24:48.751]   0.1361944   -1.65180253        199               97        0.1672622
+INFO  [15:24:48.751]   0.2392818   -6.62794007         74              120        0.9182350
+INFO  [15:24:48.751]   0.1280865   -0.24585637         97              121        0.1946292
+INFO  [15:24:48.751]   0.1318333   -0.21473917        210              140        0.6291840
+INFO  [15:24:48.751]   0.1966140   -5.47601583        138              135        0.7538265
+INFO  [15:24:48.751]   0.1271448   -1.36699688         46              157        0.2023453
+INFO  [15:24:48.751]   0.2392818   -5.06384654        102              124        0.5802031
+INFO  [15:24:48.751]   0.2392818   -6.72165037        128              181        0.8114369
+INFO  [15:24:48.751]   0.1468614   -1.26237876         70              176        0.2701760
+INFO  [15:24:48.751]  classif.ce learning_rate num_leaves min_data_in_leaf feature_fraction
+INFO  [15:24:48.751]  extra_trees    lambda_l1   lambda_l2 min_gain_to_split        timestamp_xs
+INFO  [15:24:48.751]        FALSE -3.955403055 -5.56868664         -6.156862 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  3.367165984  5.03300028         -3.855820 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -3.594923371 -2.98120559         -3.861373 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.360763982  6.25869070         -2.571239 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  6.721785652  3.37244948         -2.571201 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  4.010111726  2.94005507         -3.974958 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -2.120396777  3.08790674         -6.106760 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -5.159503406 -0.05865854         -6.704942 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  4.535980410  5.12239064         -3.142047 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  1.407067972 -4.17177134         -3.250104 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  6.737128178  1.28496293         -4.339925 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.757859104  6.38325378         -4.365937 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  3.752734727  1.43831653         -4.204319 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  0.557070920  0.92799954         -5.630974 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.086084885  6.49076637         -4.388607 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  4.071039315 -6.71211987         -4.503112 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  5.066782524 -6.63636362         -6.505963 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -0.426895074 -3.38059308         -2.416305 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  3.984875269  0.94983668         -5.453713 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -5.898142034  2.95241931         -3.259943 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -0.646330220  5.56789566         -3.055171 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -2.245646084  0.24013257         -5.147605 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  0.001658971 -1.97582471         -3.741525 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  5.032634555 -1.66204322         -4.337733 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  5.578369240 -2.33233925         -5.100397 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  6.060735246  1.95572186         -2.400106 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -2.481470790 -2.94450569         -5.111820 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.267862298  0.46737279         -5.478472 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  4.658159862  3.98540432         -5.678891 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -4.411035021 -2.59436441         -5.990016 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -6.833070646  5.26211753         -5.381417 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.223032365  4.22453305         -6.724519 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -1.431483079  0.94843316         -5.398514 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -0.872918561  5.11104345         -4.352737 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -5.496131538  2.04391159         -2.603442 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -5.007316730  4.62042320         -3.874899 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -0.458622100 -6.34413353         -5.321555 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -5.084816310 -2.08780461         -6.504118 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  2.188625551  5.85842656         -4.077681 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  0.948225880 -2.89797863         -6.170628 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -2.134953968 -6.51216191         -5.224602 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  5.303299578  3.05376008         -2.508322 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -0.622901036  6.77413224         -5.454715 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -3.738580424  0.56568761         -4.049456 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  2.458206323 -4.59336324         -5.456124 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  5.470362417  3.06094191         -3.303834 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  6.549218264 -5.26208595         -5.707000 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  0.285719083  0.29113659         -5.346401 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  3.042365664 -3.93866304         -4.641141 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  4.447798259  1.61431162         -2.405668 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -2.820404267 -4.18285875         -5.832338 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -3.146220015  2.65857405         -6.772989 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -4.966694368 -2.34146082         -5.608807 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -5.733965507 -5.46197809         -4.833748 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -0.744437374 -3.03240292         -4.329721 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  1.184766332  3.33833338         -2.651190 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -4.108373924 -5.13754658         -5.111525 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -6.338080361 -5.10600661         -6.831928 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  5.686198998  3.38074365         -4.917185 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  1.946654103 -1.32215163         -2.948785 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -2.047568938  5.88310527         -4.383987 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  6.401624924 -4.38256227         -6.399563 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  5.172365031  1.56180223         -3.285134 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  2.612427445 -1.18023634         -2.517727 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -1.621567276  6.11529452         -3.083536 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -2.946081183  0.52450052         -3.954603 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  3.318613542 -6.89435220         -6.372261 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  0.724935438  0.17270130         -6.879113 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  3.852778120  2.64202540         -2.475416 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.063717789 -6.87376800         -5.500415 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  5.695336650 -1.81576050         -5.580619 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  1.783979663 -2.32057609         -4.834449 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -6.056102492 -1.44167519         -6.322907 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  3.133858947 -4.20536621         -3.831715 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  6.579669827 -1.98933645         -4.418489 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  5.826873709 -5.76345877         -2.898854 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.286192142  6.25868742         -2.466549 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -0.503209547 -1.02033999         -6.783458 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -5.521353580 -2.73906293         -5.787967 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -1.698401461 -4.43975521         -4.220836 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  2.240370349 -5.18365527         -3.424386 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  0.835624639  5.11089682         -5.835513 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -5.547926175  5.44178762         -5.204737 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  6.537835232 -4.89960701         -2.503645 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -6.445435123 -5.11263825         -3.431301 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  6.806457611  3.89786118         -3.306577 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  5.009775495 -2.72316517         -3.020359 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  0.277262453  6.38632968         -5.842738 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -5.405378411  0.66380132         -4.010194 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -3.956229264  1.47719252         -6.103052 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  3.871159554 -4.16887188         -6.380906 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  1.821493084  0.89346311         -4.381885 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -3.270483160 -4.92587479         -4.348898 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  0.247514521  6.32937843         -5.023796 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE -0.093631641 -1.29573527         -2.867142 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE -5.628251712 -4.04624548         -2.866695 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  1.988096205 -6.17435716         -3.775523 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  6.772590905 -6.60290558         -5.781751 2026-07-01 15:24:40
+INFO  [15:24:48.751]        FALSE  3.259658443  6.35595288         -4.814374 2026-07-01 15:24:40
+INFO  [15:24:48.751]         TRUE  5.515878916  1.76577868         -6.537351 2026-07-01 15:24:40
+INFO  [15:24:48.751]  extra_trees    lambda_l1   lambda_l2 min_gain_to_split        timestamp_xs
+INFO  [15:24:48.751]         timestamp_ys
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]  2026-07-01 15:24:40
+INFO  [15:24:48.751]         timestamp_ys
+INFO  [15:24:49.000] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 100 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:50.078] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 101 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:51.142] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 102 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:52.181] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 103 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:53.344] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 104 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:54.396] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 105 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:55.329] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 106 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:56.425] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 107 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:57.454] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 108 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:58.524] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 109 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:24:59.521] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 110 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:00.566] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 111 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:01.558] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 112 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:02.607] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 113 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:03.514] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 114 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:04.539] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 115 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:05.552] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 116 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:06.527] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 117 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:07.580] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 118 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:08.595] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 119 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:09.674] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 120 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:10.663] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 121 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:11.701] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 122 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:12.673] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 123 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:13.692] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 124 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:14.681] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 125 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:15.722] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 126 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:16.760] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 127 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:18.296] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 128 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:19.278] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 129 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:20.338] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 130 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:21.433] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 131 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:22.445] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 132 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:23.512] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 133 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:24.586] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 134 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:25.602] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 135 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:26.628] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 136 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:27.695] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 137 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:28.664] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 138 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:29.745] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 139 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:30.803] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 140 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:31.881] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 141 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:32.865] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 142 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:33.896] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 143 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:34.985] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 144 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:36.020] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 145 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:37.059] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 146 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:38.136] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 147 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:39.161] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 148 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:40.141] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 149 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:41.207] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 150 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:42.285] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 151 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:43.346] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 152 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:44.403] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 153 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:45.475] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 154 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:46.538] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 155 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:47.641] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 156 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:48.838] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 157 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:49.969] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 158 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:51.077] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 158 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:52.139] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 160 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:53.265] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 161 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:54.390] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 162 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:55.507] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 163 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:56.576] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 163 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:57.577] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 165 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:58.643] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 166 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:25:59.772] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 167 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:00.817] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 168 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:01.901] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 169 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:03.000] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 170 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:04.028] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 171 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:05.107] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 172 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:06.126] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 173 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:07.242] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 174 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:08.356] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 174 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:09.446] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 176 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:10.518] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 177 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:11.761] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 178 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:12.866] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 179 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:13.983] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 180 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:15.045] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 181 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:16.146] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 182 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:17.265] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 183 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:18.364] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 184 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:19.481] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 185 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:20.552] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 186 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:21.698] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 187 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:22.793] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 188 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:23.858] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 189 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:24.962] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 190 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:26.062] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 191 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:27.140] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 192 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:28.207] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 193 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:29.319] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 193 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:30.412] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 194 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:31.553] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 195 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:32.620] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 196 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:33.742] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 197 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:34.881] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 199 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:35.907] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 200 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:37.004] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 201 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:38.154] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 202 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:39.229] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 203 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:40.310] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 204 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:41.422] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 205 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:42.503] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 206 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:43.595] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 207 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:44.773] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 207 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:45.930] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 209 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:47.048] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 210 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:48.121] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 211 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:49.285] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 212 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:50.406] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 213 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:51.468] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 214 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:52.654] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 215 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:53.737] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 216 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:54.889] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 217 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:56.065] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 218 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:57.196] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 219 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:58.412] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 220 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:26:59.549] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 221 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:00.727] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 222 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:01.908] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 223 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:02.989] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 224 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:04.126] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 224 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:05.283] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 226 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:06.461] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 227 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:07.609] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 228 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:08.776] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 228 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:09.892] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 230 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:11.024] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 231 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:12.217] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 232 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:13.354] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 233 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:14.443] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 234 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:15.595] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 234 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:16.765] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 236 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:17.912] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 237 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:19.095] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 238 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:20.637] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 239 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:21.778] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 240 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:22.893] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 241 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:24.100] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 242 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:25.260] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 243 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:26.363] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 244 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:27.512] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 245 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:28.650] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 246 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:29.816] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 247 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:31.011] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 248 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:32.210] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 249 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:33.492] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 250 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:34.680] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 251 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:35.877] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 252 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:37.070] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 253 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:38.234] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 254 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:39.434] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 255 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:40.644] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 256 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:41.735] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 256 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:42.987] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 258 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:44.219] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 259 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:45.458] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 260 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:46.738] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 261 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:47.997] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 261 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:49.210] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 263 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:50.461] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 263 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:51.611] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 265 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:52.857] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 266 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:54.113] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 266 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:55.310] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 268 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:56.555] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 269 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:57.778] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 270 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:27:59.002] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 271 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:00.275] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 272 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:01.546] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 273 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:02.749] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 274 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:04.005] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 275 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:05.248] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 276 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:06.515] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 277 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:07.758] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 278 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:09.007] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 279 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:10.248] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 280 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:11.537] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 281 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:12.802] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 282 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:14.047] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 283 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:15.290] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 284 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:16.619] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 285 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:17.906] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 286 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:19.116] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 287 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:20.383] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 288 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:21.706] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 289 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:22.993] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 290 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:24.312] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 291 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:25.541] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 292 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:26.857] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 293 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:28.189] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 294 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:29.410] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 295 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:30.672] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 296 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:31.965] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 297 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:33.270] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 297 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:34.620] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 299 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:36.037] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 300 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:37.345] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 301 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:38.686] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 302 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:40.418] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 303 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:41.797] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 304 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:43.075] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 305 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:44.390] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 306 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:45.749] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 307 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:47.034] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 307 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:48.278] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 309 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:49.571] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 310 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:50.886] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 311 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:52.164] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 312 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:53.431] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 313 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:54.679] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 314 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:55.955] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 315 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:57.208] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 316 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:58.508] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 317 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:28:59.718] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 317 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:01.031] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 319 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:02.291] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 319 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:03.607] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 321 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:04.994] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 322 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:06.255] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 322 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:07.563] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 324 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:08.824] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 325 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:10.154] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 325 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:11.499] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 327 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:12.885] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 328 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:14.246] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 329 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:15.621] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 330 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:17.023] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 331 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:18.466] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 332 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:19.844] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 333 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:21.187] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 334 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:22.517] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 335 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:23.884] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 336 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:25.213] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 337 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:26.622] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 338 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:27.967] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 339 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:29.372] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 340 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:30.768] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 341 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:32.151] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 342 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:33.541] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 343 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:34.889] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 344 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:36.209] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 345 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:37.572] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 346 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:38.922] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 347 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:41.975] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 348 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:43.322] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 349 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:44.688] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 350 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:46.092] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 351 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:47.456] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 352 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:48.821] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 353 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:50.192] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 353 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:51.532] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 355 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:52.928] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 356 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:54.454] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 357 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:55.860] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 358 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:57.227] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 359 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:29:58.687] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 360 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:00.113] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 360 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:01.456] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 362 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:02.881] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 363 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:04.265] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 364 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:06.028] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 365 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:07.494] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 366 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:08.859] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 367 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:10.203] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 368 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:11.581] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 369 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:12.944] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 370 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:14.309] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 371 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:15.712] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 372 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:17.137] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 373 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:18.464] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 374 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:19.865] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 374 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:21.227] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 376 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:22.630] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 377 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:24.059] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 378 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:25.496] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 379 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:26.986] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 380 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:28.452] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 381 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:29.923] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 382 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:31.388] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 383 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:32.811] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 384 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:34.256] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 385 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:35.701] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 386 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:37.139] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 387 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:38.600] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 388 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:40.028] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 389 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:41.448] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 390 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:42.865] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 391 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:44.334] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 392 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:45.768] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 392 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:47.186] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 394 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:48.575] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 395 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:50.040] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 396 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:51.492] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 397 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:52.902] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 398 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:54.389] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 399 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:55.869] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 399 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:57.294] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 401 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:30:58.663] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 402 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:00.128] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 403 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:01.524] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 404 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:02.950] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 405 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:04.375] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 406 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:05.909] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 407 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:07.374] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 408 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:08.948] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 409 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:10.437] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 410 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:11.981] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 411 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:13.459] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 412 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:14.931] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 412 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:16.420] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 414 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:17.884] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 415 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:19.368] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 416 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:20.917] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 417 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:22.434] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 418 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:23.872] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 419 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:25.321] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 420 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:26.815] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 421 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:28.305] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 421 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:29.791] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 422 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:31.294] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 424 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:32.814] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 425 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:34.618] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 426 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:36.135] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 427 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:37.574] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 428 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:39.073] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 429 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:40.569] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 430 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:42.036] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 431 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:43.529] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 432 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:44.958] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 432 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:46.397] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 434 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:47.873] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 435 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:49.288] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 436 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:50.821] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 437 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:52.363] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 438 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:53.889] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 438 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:55.506] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 440 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:57.015] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 441 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:31:58.533] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 441 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:00.064] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 443 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:01.592] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 444 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:03.083] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 445 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:04.614] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 446 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:06.140] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 447 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:07.724] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 448 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:09.234] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 449 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:10.865] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 450 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:12.433] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 451 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:13.920] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 452 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:15.428] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 453 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:16.973] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 454 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:18.481] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 455 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:20.029] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 456 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:21.638] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 457 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:23.179] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 457 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:24.696] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 459 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:26.304] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 460 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:27.836] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 461 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:29.356] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 462 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:30.913] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 463 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:32.373] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 464 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:33.952] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 465 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:35.501] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 466 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:36.968] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 467 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:38.537] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 468 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:40.085] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 469 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:41.653] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 470 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:43.218] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 471 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:44.749] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 472 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:46.255] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 473 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:47.835] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 474 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:49.410] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 475 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:50.994] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 476 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:52.515] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 477 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:54.083] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 478 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:55.652] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 479 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:57.210] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 479 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:32:58.750] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 481 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:00.774] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 482 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:02.382] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 483 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:03.945] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 484 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:05.533] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 485 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:07.059] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 486 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:08.658] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 487 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:10.289] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 488 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:11.849] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 489 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:13.458] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 490 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:15.124] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 491 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:16.713] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 492 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:18.344] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 493 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:19.986] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 494 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:21.623] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 495 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:23.249] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 496 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:24.813] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 497 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:26.507] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 498 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:28.143] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 499 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:29.812] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 500 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:31.443] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 501 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:33.128] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 501 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:34.797] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 503 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:36.500] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 504 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:38.076] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 504 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:39.627] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 506 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:41.265] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 507 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:42.987] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 508 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:44.598] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 508 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:46.261] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 510 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:48.010] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 511 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:49.626] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 512 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:51.218] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 513 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:52.872] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 514 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:54.487] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 515 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:56.237] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 516 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:57.958] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 517 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:33:59.586] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 518 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:01.265] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 519 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:02.937] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 520 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:04.756] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 521 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:06.427] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 522 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:08.138] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 523 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:09.845] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 524 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:11.490] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 525 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:13.170] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 526 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:14.853] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 527 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:16.574] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 528 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:18.282] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 529 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:19.949] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 530 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:21.618] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 531 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:23.247] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 531 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:24.945] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 532 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:26.613] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 534 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:28.286] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 534 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:30.329] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 536 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:32.026] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 537 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:33.662] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 538 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:35.371] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 539 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:37.020] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 540 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:38.727] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 541 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:40.386] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 541 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:42.069] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 543 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:34:42.146] Finished optimizing after 531 evaluation(s)
+INFO  [15:34:42.148] Result:
+INFO  [15:34:42.152]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [15:34:42.152]      -2.131354         15                1         0.516134       FALSE
+INFO  [15:34:42.152]  lambda_l1 lambda_l2 min_gain_to_split internal_tuned_values learner_param_vals
+INFO  [15:34:42.152]  -1.968515 -2.491107         -2.614923    num_iterations=186         <list[12]>
+INFO  [15:34:42.152]   x_domain classif.ce
+INFO  [15:34:42.152]  <list[8]>  0.1223129
+INFO  [15:34:42.154] [rush] Kill worker 'carnous_amazonparrot'
+INFO  [15:34:42.157] [rush] Kill worker 'batiste_americanindianhorse'
+INFO  [15:34:42.159] [rush] Kill worker 'woeful_nilgai'
+INFO  [15:34:42.164] [rush] Kill worker 'endless_beauceron'
+ERROR [15:34:42.168] [rush] Failed to kill worker 'endless_beauceron'
+INFO  [15:34:42.171] [rush] Kill worker 'strontium_noctilio'
+INFO  [15:34:42.173] [rush] Kill worker 'tacky_argusfish'
+INFO  [15:34:42.175] [rush] Kill worker 'macroeconomic_gar'
+ERROR [15:34:42.177] [rush] Failed to kill worker 'macroeconomic_gar'
+INFO  [15:34:42.179] [rush] Kill worker 'hogged_stallion'
+INFO  [15:34:42.181] [rush] Kill worker 'carroty_australianfreshwatercrocodile'
+ERROR [15:34:42.183] [rush] Failed to kill worker 'carroty_australianfreshwatercrocodile'
+INFO  [15:34:42.184] [rush] Kill worker 'irrationalist_toadfish'
+ERROR [15:34:42.186] [rush] Failed to kill worker 'irrationalist_toadfish'
+INFO  [15:34:42.188] [rush] Kill worker 'reinforced_mangabey'
+INFO  [15:34:42.190] [rush] Kill worker 'pyrocrystalline_nag'
+INFO  [15:34:42.192] [rush] Kill worker 'other_fruitfly'
+INFO  [15:34:42.194] [rush] Kill worker 'trigonal_catbird'
+INFO  [15:34:42.196] [rush] Kill worker 'undramatic_collie'
+ERROR [15:34:42.198] [rush] Failed to kill worker 'undramatic_collie'
+INFO  [15:34:42.200] [rush] Kill worker 'permanent_arabianhorse'
+INFO  [15:34:42.202] [rush] Kill worker 'aweinspiring_ugandakob'
+INFO  [15:34:42.204] [rush] Kill worker 'toxophilic_squid'
+INFO  [15:34:42.206] [rush] Kill worker 'consolatory_jumpingbean'
+ERROR [15:34:42.208] [rush] Failed to kill worker 'consolatory_jumpingbean'
+INFO  [15:34:42.210] [rush] Kill worker 'delayed_ivorybackedwoodswallow'
+INFO  [15:34:42.212] [rush] Kill worker 'proportionable_bumblebee'
+INFO  [15:34:42.213] [rush] Kill worker 'changeable_dromedary'
+INFO  [15:34:42.216] [rush] Kill worker 'cinematic_malamute'
+ERROR [15:34:42.217] [rush] Failed to kill worker 'cinematic_malamute'
+INFO  [15:34:42.219] [rush] Kill worker 'songful_armyant'
+INFO  [15:34:42.221] [rush] Kill worker 'sweating_kinkajou'
+INFO  [15:34:42.223] [rush] Kill worker 'wimpy_abyssiniangroundhornbill'
+ERROR [15:34:42.225] [rush] Failed to kill worker 'wimpy_abyssiniangroundhornbill'
+INFO  [15:34:42.227] [rush] Kill worker 'sharpcut_degus'
+ERROR [15:34:42.229] [rush] Failed to kill worker 'sharpcut_degus'
+INFO  [15:34:42.231] [rush] Kill worker 'glazed_cob'
+INFO  [15:34:42.233] [rush] Kill worker 'unannotated_pittabird'
+INFO  [15:34:42.235] [rush] Kill worker 'taxonomic_pintail'
+INFO  [15:34:42.237] [rush] Kill worker 'icosahedral_austrianpinscher'
+INFO  [15:34:42.239] [rush] Kill worker 'grapy_umbrette'
+INFO  [15:34:42.241] [rush] Kill worker 'doddering_erin'
+INFO  [15:34:42.243] [rush] Kill worker 'extensible_pinemarten'
+INFO  [15:34:42.246] [rush] Kill worker 'endocardial_bluetickcoonhound'
+ERROR [15:34:42.248] [rush] Failed to kill worker 'endocardial_bluetickcoonhound'
+INFO  [15:34:42.250] [rush] Kill worker 'halfpetrified_comet'
+ERROR [15:34:42.252] [rush] Failed to kill worker 'halfpetrified_comet'
+INFO  [15:34:42.254] [rush] Kill worker 'unsanitised_mollusk'
+ERROR [15:34:42.256] [rush] Failed to kill worker 'unsanitised_mollusk'
+INFO  [15:34:42.258] [rush] Kill worker 'torrential_utahprairiedog'
+ERROR [15:34:42.260] [rush] Failed to kill worker 'torrential_utahprairiedog'
+INFO  [15:34:42.262] [rush] Kill worker 'juicy_mastiff'
+ERROR [15:34:42.264] [rush] Failed to kill worker 'juicy_mastiff'
+INFO  [15:34:42.267] [rush] Kill worker 'confiscable_doe'
+ERROR [15:34:42.272] [rush] Failed to kill worker 'confiscable_doe'
+INFO  [15:34:42.276] [rush] Kill worker 'excisable_squamata'
+ERROR [15:34:42.278] [rush] Failed to kill worker 'excisable_squamata'
+INFO  [15:34:42.280] [rush] Kill worker 'unrelativistic_inchworm'
+ERROR [15:34:42.282] [rush] Failed to kill worker 'unrelativistic_inchworm'
+INFO  [15:34:42.284] [rush] Kill worker 'luny_germanshorthairedpointer'
+ERROR [15:34:42.286] [rush] Failed to kill worker 'luny_germanshorthairedpointer'
+INFO  [15:34:42.288] [rush] Kill worker 'childsafe_eeve'
+ERROR [15:34:42.290] [rush] Failed to kill worker 'childsafe_eeve'
+INFO  [15:34:42.292] [rush] Kill worker 'woollen_ovenbird'
+ERROR [15:34:42.294] [rush] Failed to kill worker 'woollen_ovenbird'
+INFO  [15:34:42.296] [rush] Kill worker 'beaming_buckeyebutterfly'
+ERROR [15:34:42.299] [rush] Failed to kill worker 'beaming_buckeyebutterfly'
+INFO  [15:34:42.301] [rush] Kill worker 'hyperbrutal_whippet'
+ERROR [15:34:42.303] [rush] Failed to kill worker 'hyperbrutal_whippet'
+INFO  [15:34:42.305] [rush] Kill worker 'thinnish_groundhog'
+ERROR [15:34:42.307] [rush] Failed to kill worker 'thinnish_groundhog'
+INFO  [15:34:42.309] [rush] Kill worker 'hemophobic_americankestrel'
+ERROR [15:34:42.311] [rush] Failed to kill worker 'hemophobic_americankestrel'
+INFO  [15:34:42.313] [rush] Kill worker 'picturesque_flycatcher'
+ERROR [15:34:42.314] [rush] Failed to kill worker 'picturesque_flycatcher'
+INFO  [15:34:42.316] [rush] Kill worker 'boastful_pig'
+INFO  [15:34:42.318] [rush] Kill worker 'patrilateral_neonbluehermitcrab'
+ERROR [15:34:42.320] [rush] Failed to kill worker 'patrilateral_neonbluehermitcrab'
+INFO  [15:34:42.322] [rush] Kill worker 'preachy_hoki'
+ERROR [15:34:42.324] [rush] Failed to kill worker 'preachy_hoki'
+INFO  [15:34:42.326] [rush] Kill worker 'uppity_duckbillplatypus'
+ERROR [15:34:42.328] [rush] Failed to kill worker 'uppity_duckbillplatypus'
+INFO  [15:34:42.330] [rush] Kill worker 'redoubtable_spider'
+ERROR [15:34:42.332] [rush] Failed to kill worker 'redoubtable_spider'
+INFO  [15:34:42.335] [rush] Kill worker 'dewyeyed_natterjacktoad'
+ERROR [15:34:42.340] [rush] Failed to kill worker 'dewyeyed_natterjacktoad'
+INFO  [15:34:42.344] [rush] Kill worker 'ideological_barnacle'
+ERROR [15:34:42.346] [rush] Failed to kill worker 'ideological_barnacle'
+INFO  [15:34:42.351] [rush] Kill worker 'interior_blueshark'
+ERROR [15:34:42.354] [rush] Failed to kill worker 'interior_blueshark'
+INFO  [15:34:42.356] [rush] Kill worker 'uptight_samoyeddog'
+ERROR [15:34:42.358] [rush] Failed to kill worker 'uptight_samoyeddog'
+INFO  [15:34:42.360] [rush] Kill worker 'astral_abyssiniancat'
+ERROR [15:34:42.363] [rush] Failed to kill worker 'astral_abyssiniancat'
+INFO  [15:34:42.365] [rush] Kill worker 'selfevolved_americankestrel'
+ERROR [15:34:42.367] [rush] Failed to kill worker 'selfevolved_americankestrel'
+INFO  [15:34:42.369] [rush] Kill worker 'dovecolored_massospondylus'
+ERROR [15:34:42.371] [rush] Failed to kill worker 'dovecolored_massospondylus'
+INFO  [15:34:42.373] [rush] Kill worker 'selfaware_blackmamba'
+ERROR [15:34:42.376] [rush] Failed to kill worker 'selfaware_blackmamba'
+INFO  [15:34:42.378] [rush] Kill worker 'quasicontinuous_iceblueredtopzebra'
+ERROR [15:34:42.380] [rush] Failed to kill worker 'quasicontinuous_iceblueredtopzebra'
+INFO  [15:34:42.382] [rush] Kill worker 'jumping_emperorpenguin'
+ERROR [15:34:42.384] [rush] Failed to kill worker 'jumping_emperorpenguin'
+INFO  [15:34:42.386] [rush] Kill worker 'besotted_antelopegroundsquirrel'
+ERROR [15:34:42.388] [rush] Failed to kill worker 'besotted_antelopegroundsquirrel'
+INFO  [15:34:42.391] [rush] Kill worker 'welldramatized_northernspottedowl'
+ERROR [15:34:42.393] [rush] Failed to kill worker 'welldramatized_northernspottedowl'
+INFO  [15:34:42.395] [rush] Kill worker 'matrilateral_cirriped'
+INFO  [15:34:42.397] [rush] Kill worker 'citied_rasbora'
+ERROR [15:34:42.399] [rush] Failed to kill worker 'citied_rasbora'
+INFO  [15:34:42.401] [rush] Kill worker 'mycophagous_racer'
+ERROR [15:34:42.403] [rush] Failed to kill worker 'mycophagous_racer'
+INFO  [15:34:42.405] [rush] Kill worker 'witty_africanparadiseflycatcher'
+ERROR [15:34:42.408] [rush] Failed to kill worker 'witty_africanparadiseflycatcher'
+INFO  [15:34:42.410] [rush] Kill worker 'fishy_arawana'
+ERROR [15:34:42.413] [rush] Failed to kill worker 'fishy_arawana'
+INFO  [15:34:42.415] [rush] Kill worker 'tridymite_yosemitetoad'
+ERROR [15:34:42.418] [rush] Failed to kill worker 'tridymite_yosemitetoad'
+INFO  [15:34:42.420] [rush] Kill worker 'abducent_shoveler'
+INFO  [15:34:42.423] [rush] Kill worker 'pseudoinsane_elk'
+ERROR [15:34:42.425] [rush] Failed to kill worker 'pseudoinsane_elk'
+INFO  [15:34:42.427] [rush] Kill worker 'horselike_ozarkbigearedbat'
+ERROR [15:34:42.429] [rush] Failed to kill worker 'horselike_ozarkbigearedbat'
+INFO  [15:34:42.431] [rush] Kill worker 'avian_ichneumonfly'
+ERROR [15:34:42.433] [rush] Failed to kill worker 'avian_ichneumonfly'
+INFO  [15:34:42.436] [rush] Kill worker 'pestersome_moth'
+ERROR [15:34:42.438] [rush] Failed to kill worker 'pestersome_moth'
+INFO  [15:34:42.440] [rush] Kill worker 'dolostone_hornet'
+ERROR [15:34:42.442] [rush] Failed to kill worker 'dolostone_hornet'
+INFO  [15:34:42.444] [rush] Kill worker 'squirearchical_ninebandedarmadillo'
+ERROR [15:34:42.446] [rush] Failed to kill worker 'squirearchical_ninebandedarmadillo'
+INFO  [15:34:42.479] [rush] Kill worker 'ungodly_galapagossealion'
+ERROR [15:34:42.482] [rush] Failed to kill worker 'ungodly_galapagossealion'
+INFO  [15:34:42.484] [rush] Kill worker 'welloff_zebrafish'
+ERROR [15:34:42.486] [rush] Failed to kill worker 'welloff_zebrafish'
+INFO  [15:34:42.488] [rush] Kill worker 'floppy_jackal'
+ERROR [15:34:42.490] [rush] Failed to kill worker 'floppy_jackal'
+INFO  [15:34:42.492] [rush] Kill worker 'superluxurious_lynx'
+INFO  [15:34:42.494] [rush] Kill worker 'supersolar_stork'
+ERROR [15:34:42.495] [rush] Failed to kill worker 'supersolar_stork'
+INFO  [15:34:42.497] [rush] Kill worker 'experimental_cockatiel'
+ERROR [15:34:42.499] [rush] Failed to kill worker 'experimental_cockatiel'
+INFO  [15:34:42.501] [rush] Kill worker 'paraffin_python'
+ERROR [15:34:42.503] [rush] Failed to kill worker 'paraffin_python'
+INFO  [15:34:42.505] [rush] Kill worker 'unappreciated_ratfish'
+ERROR [15:34:42.506] [rush] Failed to kill worker 'unappreciated_ratfish'
+INFO  [15:34:42.508] [rush] Kill worker 'dim_sifaka'
+ERROR [15:34:42.510] [rush] Failed to kill worker 'dim_sifaka'
+INFO  [15:34:42.512] [rush] Kill worker 'cranial_hairstreakbutterfly'
+ERROR [15:34:42.514] [rush] Failed to kill worker 'cranial_hairstreakbutterfly'
+INFO  [15:34:42.516] [rush] Kill worker 'griffinesque_indri'
+INFO  [15:34:42.518] [rush] Kill worker 'repressed_astrangiacoral'
+ERROR [15:34:42.519] [rush] Failed to kill worker 'repressed_astrangiacoral'
+INFO  [15:34:42.521] [rush] Kill worker 'particular_whale'
+ERROR [15:34:42.523] [rush] Failed to kill worker 'particular_whale'
+INFO  [15:34:42.525] [rush] Kill worker 'deodorizing_harpyeagle'
+ERROR [15:34:42.527] [rush] Failed to kill worker 'deodorizing_harpyeagle'
+INFO  [15:34:42.529] [rush] Kill worker 'deposable_barracuda'
+ERROR [15:34:42.531] [rush] Failed to kill worker 'deposable_barracuda'
+INFO  [15:34:42.532] [rush] Kill worker 'equatorial_africanparadiseflycatcher'
+ERROR [15:34:42.534] [rush] Failed to kill worker 'equatorial_africanparadiseflycatcher'
+INFO  [15:34:42.536] [rush] Kill worker 'unreadable_scallop'
+ERROR [15:34:42.538] [rush] Failed to kill worker 'unreadable_scallop'
+INFO  [15:34:42.539] [rush] Kill worker 'rightwing_worm'
+ERROR [15:34:42.541] [rush] Failed to kill worker 'rightwing_worm'
+INFO  [15:34:42.543] [rush] Kill worker 'exotic_jaeger'
+ERROR [15:34:42.545] [rush] Failed to kill worker 'exotic_jaeger'
+INFO  [15:34:42.546] [rush] Kill worker 'savage_dassierat'
+ERROR [15:34:42.548] [rush] Failed to kill worker 'savage_dassierat'
+INFO  [15:34:42.550] [rush] Kill worker 'pregnant_pinkriverdolphin'
+ERROR [15:34:42.552] [rush] Failed to kill worker 'pregnant_pinkriverdolphin'
+INFO  [15:34:42.553] [rush] Kill worker 'demandable_siberiantiger'
+ERROR [15:34:42.555] [rush] Failed to kill worker 'demandable_siberiantiger'
+INFO  [15:34:42.557] [rush] Kill worker 'revengeful_massasauga'
+ERROR [15:34:42.559] [rush] Failed to kill worker 'revengeful_massasauga'
+INFO  [15:34:42.561] [rush] Kill worker 'endemic_owl'
+ERROR [15:34:42.562] [rush] Failed to kill worker 'endemic_owl'
+INFO  [15:34:42.564] [rush] Kill worker 'segregated_asiaticwildass'
+ERROR [15:34:42.566] [rush] Failed to kill worker 'segregated_asiaticwildass'
+INFO  [15:34:42.568] [rush] Kill worker 'rebellious_virginiaopossum'
+ERROR [15:34:42.569] [rush] Failed to kill worker 'rebellious_virginiaopossum'
+INFO  [15:34:42.571] [rush] Kill worker 'gaseous_greatdane'
+ERROR [15:34:42.573] [rush] Failed to kill worker 'gaseous_greatdane'
+INFO  [15:34:42.575] [rush] Kill worker 'asbestoidal_junebug'
+ERROR [15:34:42.576] [rush] Failed to kill worker 'asbestoidal_junebug'
+INFO  [15:34:42.578] [rush] Kill worker 'rhizophilic_flyingsquirrel'
+ERROR [15:34:42.580] [rush] Failed to kill worker 'rhizophilic_flyingsquirrel'
+INFO  [15:34:42.582] [rush] Kill worker 'pseudonoble_harrier'
+INFO  [15:34:42.583] [rush] Kill worker 'consignable_seriema'
+ERROR [15:34:42.585] [rush] Failed to kill worker 'consignable_seriema'
+INFO  [15:34:42.587] [rush] Kill worker 'specified_sealion'
+ERROR [15:34:42.589] [rush] Failed to kill worker 'specified_sealion'
+INFO  [15:34:42.591] [rush] Kill worker 'potty_chameleon'
+INFO  [15:34:42.593] [rush] Kill worker 'alphameric_burro'
+ERROR [15:34:42.594] [rush] Failed to kill worker 'alphameric_burro'
+INFO  [15:34:42.596] [rush] Kill worker 'agrological_inexpectatumpleco'
+ERROR [15:34:42.598] [rush] Failed to kill worker 'agrological_inexpectatumpleco'
+INFO  [15:34:42.600] [rush] Kill worker 'depletive_quail'
+ERROR [15:34:42.602] [rush] Failed to kill worker 'depletive_quail'
+INFO  [15:34:42.603] [rush] Kill worker 'soldierlike_dog'
+ERROR [15:34:42.605] [rush] Failed to kill worker 'soldierlike_dog'
+INFO  [15:34:42.607] [rush] Kill worker 'wellcoloured_arkshell'
+ERROR [15:34:42.609] [rush] Failed to kill worker 'wellcoloured_arkshell'
+INFO  [15:34:42.610] [rush] Kill worker 'monotonous_firebelliedtoad'
+INFO  [15:34:42.612] [rush] Kill worker 'medical_chameleon'
+ERROR [15:34:42.614] [rush] Failed to kill worker 'medical_chameleon'

@@ -36,7 +36,7 @@ renv::install(
   "microbenchmark",
   "mlr-org/batchtools",
   "mlr-org/mlr3mbo",
-  "mlr-org/bbotk",
+  "bbotk",
   "mlr-org/mlr3tuning",
   "mlr3oml",
   "ranger",

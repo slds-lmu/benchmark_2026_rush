@@ -12,7 +12,7 @@ hq alloc add slurm \
   --time-limit 24h \
   --cpus 112 \
   --backlog 25 \
-  --idle-timeout 10m \
+  --idle-timeout 2h \
   --max-workers-per-alloc 1\
   -- --clusters=cm4 \
   --partition=cm4_tiny \
@@ -20,7 +20,3 @@ hq alloc add slurm \
   --ntasks=112 \
   --get-user-env \
   --export=NONE
-
-hq server stop
-rm benchmark_2026_rush
-rm nohup.out

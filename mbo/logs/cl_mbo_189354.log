@@ -1,0 +1,517 @@
+Waiting for workers to connect... 36/448
+Waiting for workers to connect... 43/448
+Waiting for workers to connect... 50/448
+Waiting for workers to connect... 57/448
+Waiting for workers to connect... 66/448
+Waiting for workers to connect... 76/448
+Waiting for workers to connect... 81/448
+Waiting for workers to connect... 89/448
+Waiting for workers to connect... 100/448
+Waiting for workers to connect... 112/448
+Waiting for workers to connect... 123/448
+Waiting for workers to connect... 137/448
+Waiting for workers to connect... 158/448
+Waiting for workers to connect... 165/448
+Waiting for workers to connect... 171/448
+Waiting for workers to connect... 180/448
+Waiting for workers to connect... 188/448
+Waiting for workers to connect... 194/448
+Waiting for workers to connect... 202/448
+Waiting for workers to connect... 210/448
+Waiting for workers to connect... 218/448
+Waiting for workers to connect... 228/448
+Waiting for workers to connect... 236/448
+Waiting for workers to connect... 246/448
+Waiting for workers to connect... 257/448
+Waiting for workers to connect... 267/448
+Waiting for workers to connect... 279/448
+Waiting for workers to connect... 285/448
+Waiting for workers to connect... 293/448
+Waiting for workers to connect... 300/448
+Waiting for workers to connect... 309/448
+Waiting for workers to connect... 319/448
+Waiting for workers to connect... 331/448
+Waiting for workers to connect... 347/448
+Waiting for workers to connect... 362/448
+Waiting for workers to connect... 383/448
+Waiting for workers to connect... 403/448
+Waiting for workers to connect... 415/448
+Waiting for workers to connect... 432/448
+Waiting for workers to connect... 448/448
+INFO  [15:59:24.581] [bbotk] Starting to optimize 8 parameter(s) with '<OptimizerMbo>' and '<TerminatorRunTime> [secs=600]'
+INFO  [15:59:24.875] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 100 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:26.035] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 101 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:27.021] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 102 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:28.071] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 103 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:29.105] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 104 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:30.217] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 105 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:31.315] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 106 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:32.346] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 107 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:33.428] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 108 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:34.383] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 109 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:35.394] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 110 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:36.432] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 111 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:37.560] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 112 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:38.685] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 113 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:39.744] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 114 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:40.837] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 115 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:41.853] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 116 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:42.906] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 117 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:43.963] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 118 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:45.105] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 119 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:46.195] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 120 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:47.241] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 121 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:48.299] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 122 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:49.355] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 123 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:50.421] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 124 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:51.505] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 125 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:52.544] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 126 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:53.614] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 127 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:54.690] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 128 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:55.751] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 129 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:56.853] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 130 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:57.865] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 131 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:58.934] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 132 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [15:59:59.978] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 133 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:01.006] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 134 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:02.669] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 135 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:03.720] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 136 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:04.894] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 137 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:05.979] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 138 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:07.199] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 139 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:08.369] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 140 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:09.466] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 141 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:10.601] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 142 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:11.744] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 143 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:00:12.733] [bbotk] Evaluating 44 configuration(s)
+INFO  [16:00:12.897] [mlr3] Running benchmark with 440 resampling iterations
+INFO  [16:05:24.864] [mlr3] Finished benchmark
+INFO  [16:05:29.823] [bbotk] Result of batch 2:
+INFO  [16:05:29.831] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [16:05:29.831] [bbotk]      -2.356728        252               45        0.4306777       FALSE
+INFO  [16:05:29.831] [bbotk]      -2.137076        228               37        0.4231003       FALSE
+INFO  [16:05:29.831] [bbotk]      -2.054252        230               30        0.4126057       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.952991        210              106        0.4173544       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.705663        229              113        0.4177365       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.908206        223               58        0.4216439       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.933865        227               33        0.4163513       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.300549        160              127        0.4720777       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.376021        156              125        0.5606801       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.369557        157              122        0.4767639       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.931778        229               36        0.4504598       FALSE
+INFO  [16:05:29.831] [bbotk]      -4.432979        186              119        0.4170179       FALSE
+INFO  [16:05:29.831] [bbotk]      -4.692313        218              122        0.5139634       FALSE
+INFO  [16:05:29.831] [bbotk]      -4.802327        159               10        0.6565934       FALSE
+INFO  [16:05:29.831] [bbotk]      -4.152053        151              121        0.7364312       FALSE
+INFO  [16:05:29.831] [bbotk]      -5.450839        230              131        0.5269514       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.444696        188               26        0.4663834       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.283456        162              125        0.6910956       FALSE
+INFO  [16:05:29.831] [bbotk]      -2.038620        157               57        0.5710991       FALSE
+INFO  [16:05:29.831] [bbotk]      -2.244592        228              131        0.7763653       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.994632        154               32        0.4744429       FALSE
+INFO  [16:05:29.831] [bbotk]      -5.184131        250               99        0.9173773       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.131497        159              128        0.4172003       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.934320        152              168        0.7218220       FALSE
+INFO  [16:05:29.831] [bbotk]      -2.035614         89              130        0.7704917       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.334178        179               40        0.4176113       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.242787        178               52        0.7614376       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.263486        157              197        0.4726976       FALSE
+INFO  [16:05:29.831] [bbotk]      -5.377939        239              166        0.6160468       FALSE
+INFO  [16:05:29.831] [bbotk]      -2.077021         28               20        0.4447029       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.356195        205               87        0.3701284       FALSE
+INFO  [16:05:29.831] [bbotk]      -4.021624        197              156        0.6851224       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.452909        154               37        0.9715119       FALSE
+INFO  [16:05:29.831] [bbotk]      -5.328047        193               96        0.3518147       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.526427         81              151        0.7609635       FALSE
+INFO  [16:05:29.831] [bbotk]      -5.302488        191               93        0.6165269       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.823453        149               41        0.9241446       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.788296        152               52        0.7552615       FALSE
+INFO  [16:05:29.831] [bbotk]      -3.267831        154              126        0.7892586        TRUE
+INFO  [16:05:29.831] [bbotk]      -4.831273        112              128        0.6354787       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.839737        107               73        0.4172933       FALSE
+INFO  [16:05:29.831] [bbotk]      -4.756423        195              189        0.5832719       FALSE
+INFO  [16:05:29.831] [bbotk]      -2.149442         27               32        0.4203061       FALSE
+INFO  [16:05:29.831] [bbotk]      -1.665695         71              164        0.8004344       FALSE
+INFO  [16:05:29.831] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [16:05:29.831] [bbotk]   lambda_l1   lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate
+INFO  [16:05:29.831] [bbotk]   0.8721669 -5.27539936         -6.737402 -6.122933 2026-07-01 15:59:24
+INFO  [16:05:29.831] [bbotk]   0.9383828 -5.48344581         -6.907755 -6.061521 2026-07-01 15:59:25
+INFO  [16:05:29.831] [bbotk]   0.5916498 -6.17542465         -6.777926 -5.601686 2026-07-01 15:59:26
+INFO  [16:05:29.831] [bbotk]   1.2613133  0.12186404         -6.751204 -5.244199 2026-07-01 15:59:27
+INFO  [16:05:29.831] [bbotk]  -1.3077686 -5.36344085         -6.848987 -5.010124 2026-07-01 15:59:28
+INFO  [16:05:29.831] [bbotk]   0.6745939 -5.39608472         -6.753945 -5.042525 2026-07-01 15:59:30
+INFO  [16:05:29.831] [bbotk]   0.7367641 -5.40002782         -6.745025 -5.354248 2026-07-01 15:59:31
+INFO  [16:05:29.831] [bbotk]   1.4836986  4.02804493         -2.343625 -4.791686 2026-07-01 15:59:32
+INFO  [16:05:29.831] [bbotk]  -4.4504123  3.32825251         -2.425176 -4.578151 2026-07-01 15:59:33
+INFO  [16:05:29.831] [bbotk]   1.5729663  4.78115283         -2.850078 -4.672589 2026-07-01 15:59:34
+INFO  [16:05:29.831] [bbotk]   0.6201912 -6.90775528         -4.417398 -4.487667 2026-07-01 15:59:35
+INFO  [16:05:29.831] [bbotk]   2.0941230  1.15424619         -6.331140 -4.620770 2026-07-01 15:59:36
+INFO  [16:05:29.831] [bbotk]  -6.9077553  2.80106733         -2.440499 -4.402001 2026-07-01 15:59:37
+INFO  [16:05:29.831] [bbotk]  -1.0950250  5.79759252         -6.752321 -4.426968 2026-07-01 15:59:38
+INFO  [16:05:29.831] [bbotk]  -2.0530041  2.73096558         -2.473748 -4.261550 2026-07-01 15:59:39
+INFO  [16:05:29.831] [bbotk]  -6.9077553  2.61078878         -4.571847 -4.220157 2026-07-01 15:59:40
+INFO  [16:05:29.831] [bbotk]   0.8502498  0.80868215         -6.210284 -4.296677 2026-07-01 15:59:41
+INFO  [16:05:29.831] [bbotk]  -6.6700222  3.26086347         -5.038209 -4.219304 2026-07-01 15:59:42
+INFO  [16:05:29.831] [bbotk]  -2.2080365 -6.42866176         -4.521816 -4.233950 2026-07-01 15:59:43
+INFO  [16:05:29.831] [bbotk]  -1.4864086  6.09425760         -3.009842 -4.184737 2026-07-01 15:59:44
+INFO  [16:05:29.831] [bbotk]   1.4396871 -5.64361855         -6.839614 -4.258875 2026-07-01 15:59:46
+INFO  [16:05:29.831] [bbotk]  -1.4962624  0.35627922         -2.460102 -4.063264 2026-07-01 15:59:47
+INFO  [16:05:29.831] [bbotk]   1.5716948  3.17683508         -3.017679 -4.238245 2026-07-01 15:59:48
+INFO  [16:05:29.831] [bbotk]  -1.6232585 -6.90775528         -6.691265 -4.139473 2026-07-01 15:59:49
+INFO  [16:05:29.831] [bbotk]  -6.8711165  2.28326986         -6.048102 -4.016325 2026-07-01 15:59:50
+INFO  [16:05:29.831] [bbotk]   2.8306643 -5.27452218         -6.288049 -4.054735 2026-07-01 15:59:51
+INFO  [16:05:29.831] [bbotk]  -1.3454277 -6.55607890         -2.554050 -3.952894 2026-07-01 15:59:52
+INFO  [16:05:29.831] [bbotk]  -6.0266704  6.90775528         -3.052512 -4.058805 2026-07-01 15:59:53
+INFO  [16:05:29.831] [bbotk]  -1.9528903 -5.12583129         -5.914739 -3.993464 2026-07-01 15:59:54
+INFO  [16:05:29.831] [bbotk]   1.8543430  3.54686010         -5.146636 -4.089886 2026-07-01 15:59:55
+INFO  [16:05:29.831] [bbotk]   1.9922579 -5.38051449         -6.759265 -3.939681 2026-07-01 15:59:56
+INFO  [16:05:29.831] [bbotk]  -4.7908287 -5.41825526         -5.754407 -3.922396 2026-07-01 15:59:57
+INFO  [16:05:29.831] [bbotk]   0.7682105 -0.09147009         -2.958164 -3.872653 2026-07-01 15:59:58
+INFO  [16:05:29.831] [bbotk]   2.6862441  0.73228144         -6.284163 -3.905721 2026-07-01 15:59:59
+INFO  [16:05:29.831] [bbotk]  -2.1848378  3.28428542         -5.583772 -3.861466 2026-07-01 16:00:00
+INFO  [16:05:29.831] [bbotk]  -5.9154143  6.43281823         -3.044871 -3.852504 2026-07-01 16:00:02
+INFO  [16:05:29.831] [bbotk]  -1.5734741 -1.01495178         -2.450313 -3.826415 2026-07-01 16:00:03
+INFO  [16:05:29.831] [bbotk]  -2.5063568 -6.29696149         -5.288812 -3.873460 2026-07-01 16:00:04
+INFO  [16:05:29.831] [bbotk]  -6.7835092 -4.27805565         -2.523533 -3.764830 2026-07-01 16:00:05
+INFO  [16:05:29.831] [bbotk]  -1.3283375 -6.90775528         -4.987980 -3.726554 2026-07-01 16:00:07
+INFO  [16:05:29.831] [bbotk]   2.1734470  1.02220970         -2.995356 -3.995069 2026-07-01 16:00:08
+INFO  [16:05:29.831] [bbotk]  -1.9124163 -3.69550935         -5.289589 -3.719863 2026-07-01 16:00:09
+INFO  [16:05:29.831] [bbotk]  -0.9622192  6.19134561         -5.390541 -3.741703 2026-07-01 16:00:10
+INFO  [16:05:29.831] [bbotk]  -5.3737317 -6.41219475         -4.647927 -3.749548 2026-07-01 16:00:11
+INFO  [16:05:29.831] [bbotk]   lambda_l1   lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate
+INFO  [16:05:29.831] [bbotk]  timestamp_acq_function timestamp_acq_optimizer      timestamp_loop classif.ce
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:24     2026-07-01 15:59:24 2026-07-01 15:59:25  0.3234084
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:26     2026-07-01 15:59:26 2026-07-01 15:59:26  0.3239553
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:27     2026-07-01 15:59:27 2026-07-01 15:59:27  0.3238719
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:28     2026-07-01 15:59:28 2026-07-01 15:59:28  0.3244819
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:29     2026-07-01 15:59:29 2026-07-01 15:59:30  0.3248712
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:30     2026-07-01 15:59:30 2026-07-01 15:59:31  0.3239850
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:31     2026-07-01 15:59:31 2026-07-01 15:59:32  0.3243076
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:32     2026-07-01 15:59:32 2026-07-01 15:59:33  0.3249472
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:33     2026-07-01 15:59:33 2026-07-01 15:59:34  0.3244596
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:34     2026-07-01 15:59:34 2026-07-01 15:59:35  0.3251549
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:35     2026-07-01 15:59:35 2026-07-01 15:59:36  0.3240833
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:36     2026-07-01 15:59:36 2026-07-01 15:59:37  0.3257889
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:37     2026-07-01 15:59:37 2026-07-01 15:59:38  0.3260318
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:38     2026-07-01 15:59:38 2026-07-01 15:59:39  0.3281935
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:39     2026-07-01 15:59:39 2026-07-01 15:59:40  0.3265602
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:40     2026-07-01 15:59:40 2026-07-01 15:59:41  0.3263470
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:41     2026-07-01 15:59:41 2026-07-01 15:59:42  0.3246320
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:42     2026-07-01 15:59:42 2026-07-01 15:59:43  0.3255386
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:44     2026-07-01 15:59:44 2026-07-01 15:59:44  0.3249917
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:45     2026-07-01 15:59:45 2026-07-01 15:59:46  0.3249194
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:46     2026-07-01 15:59:46 2026-07-01 15:59:47  0.3242705
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:47     2026-07-01 15:59:47 2026-07-01 15:59:48  0.3274408
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:48     2026-07-01 15:59:48 2026-07-01 15:59:49  0.3240684
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:49     2026-07-01 15:59:49 2026-07-01 15:59:50  0.3259891
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:50     2026-07-01 15:59:50 2026-07-01 15:59:51  0.3261356
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:51     2026-07-01 15:59:51 2026-07-01 15:59:52  0.3254348
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:52     2026-07-01 15:59:52 2026-07-01 15:59:53  0.3249379
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:53     2026-07-01 15:59:53 2026-07-01 15:59:54  0.3259354
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:54     2026-07-01 15:59:54 2026-07-01 15:59:55  0.3265212
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:55     2026-07-01 15:59:55 2026-07-01 15:59:56  0.3270440
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:56     2026-07-01 15:59:56 2026-07-01 15:59:57  0.3250788
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:57     2026-07-01 15:59:57 2026-07-01 15:59:58  0.3258204
+INFO  [16:05:29.831] [bbotk]     2026-07-01 15:59:58     2026-07-01 15:59:58 2026-07-01 15:59:59  0.3289147
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:00     2026-07-01 16:00:00 2026-07-01 16:00:00  0.3365976
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:01     2026-07-01 16:00:01 2026-07-01 16:00:02  0.3268994
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:02     2026-07-01 16:00:02 2026-07-01 16:00:03  0.3319070
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:03     2026-07-01 16:00:03 2026-07-01 16:00:04  0.3271664
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:04     2026-07-01 16:00:04 2026-07-01 16:00:05  0.3264712
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:06     2026-07-01 16:00:06 2026-07-01 16:00:06  0.3284660
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:07     2026-07-01 16:00:07 2026-07-01 16:00:08  0.3276707
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:08     2026-07-01 16:00:08 2026-07-01 16:00:09  0.3255738
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:09     2026-07-01 16:00:09 2026-07-01 16:00:10  0.3260781
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:10     2026-07-01 16:00:10 2026-07-01 16:00:11  0.3282584
+INFO  [16:05:29.831] [bbotk]     2026-07-01 16:00:11     2026-07-01 16:00:11 2026-07-01 16:00:12  0.3287330
+INFO  [16:05:29.831] [bbotk]  timestamp_acq_function timestamp_acq_optimizer      timestamp_loop classif.ce
+INFO  [16:05:29.831] [bbotk]  warnings errors runtime_learners internal_tuned_values
+INFO  [16:05:29.831] [bbotk]         0      0          184.452    num_iterations=293
+INFO  [16:05:29.831] [bbotk]         0      0          146.856    num_iterations=232
+INFO  [16:05:29.831] [bbotk]         0      0          140.527    num_iterations=221
+INFO  [16:05:29.831] [bbotk]         0      0          593.446    num_iterations=874
+INFO  [16:05:29.831] [bbotk]         0      0          107.927    num_iterations=163
+INFO  [16:05:29.831] [bbotk]         0      0          143.636    num_iterations=237
+INFO  [16:05:29.831] [bbotk]         0      0          133.315    num_iterations=208
+INFO  [16:05:29.831] [bbotk]         0      0          411.238    num_iterations=627
+INFO  [16:05:29.831] [bbotk]         0      0          347.890    num_iterations=610
+INFO  [16:05:29.831] [bbotk]         0      0          536.030    num_iterations=810
+INFO  [16:05:29.831] [bbotk]         0      0          133.344    num_iterations=202
+INFO  [16:05:29.831] [bbotk]         0      0          848.442   num_iterations=1249
+INFO  [16:05:29.831] [bbotk]         0      0          688.156    num_iterations=906
+INFO  [16:05:29.831] [bbotk]         0      0          853.432   num_iterations=1087
+INFO  [16:05:29.831] [bbotk]         0      0          471.418    num_iterations=674
+INFO  [16:05:29.831] [bbotk]         0      0         1274.893   num_iterations=1734
+INFO  [16:05:29.831] [bbotk]         0      0          108.592    num_iterations=165
+INFO  [16:05:29.831] [bbotk]         0      0          265.285    num_iterations=443
+INFO  [16:05:29.831] [bbotk]         0      0          122.188    num_iterations=292
+INFO  [16:05:29.831] [bbotk]         0      0          253.806    num_iterations=267
+INFO  [16:05:29.831] [bbotk]         0      0          156.933    num_iterations=278
+INFO  [16:05:29.831] [bbotk]         0      0          830.264    num_iterations=956
+INFO  [16:05:29.831] [bbotk]         0      0          384.467    num_iterations=618
+INFO  [16:05:29.831] [bbotk]         0      0          437.208    num_iterations=737
+INFO  [16:05:29.831] [bbotk]         0      0          110.435    num_iterations=253
+INFO  [16:05:29.831] [bbotk]         0      0          471.761    num_iterations=680
+INFO  [16:05:29.831] [bbotk]         0      0          245.304    num_iterations=481
+INFO  [16:05:29.831] [bbotk]         0      0          737.168   num_iterations=1066
+INFO  [16:05:29.831] [bbotk]         0      0         1107.023   num_iterations=1449
+INFO  [16:05:29.831] [bbotk]         0      0          188.766    num_iterations=614
+INFO  [16:05:29.831] [bbotk]         0      0          345.078    num_iterations=481
+INFO  [16:05:29.831] [bbotk]         0      0          415.904    num_iterations=597
+INFO  [16:05:29.831] [bbotk]         0      0           64.397     num_iterations=79
+INFO  [16:05:29.831] [bbotk]         0      0         1262.999   num_iterations=2151
+INFO  [16:05:29.831] [bbotk]         0      0           88.424    num_iterations=189
+INFO  [16:05:29.831] [bbotk]         0      0         1029.759   num_iterations=1458
+INFO  [16:05:29.831] [bbotk]         0      0          325.009    num_iterations=535
+INFO  [16:05:29.831] [bbotk]         0      0           81.777    num_iterations=145
+INFO  [16:05:29.831] [bbotk]         0      0          238.848    num_iterations=349
+INFO  [16:05:29.831] [bbotk]         0      0          704.848   num_iterations=1184
+INFO  [16:05:29.831] [bbotk]         0      0          123.237    num_iterations=233
+INFO  [16:05:29.831] [bbotk]         0      0          689.580   num_iterations=1013
+INFO  [16:05:29.831] [bbotk]         0      0          187.354    num_iterations=539
+INFO  [16:05:29.831] [bbotk]         0      0           73.513    num_iterations=150
+INFO  [16:05:29.831] [bbotk]  warnings errors runtime_learners internal_tuned_values
+INFO  [16:05:30.075] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 144 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:31.216] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 145 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:32.234] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 146 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:33.332] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 147 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:34.374] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 148 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:35.434] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 149 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:36.550] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 150 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:37.621] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 151 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:38.731] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 152 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:39.812] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 153 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:40.920] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 154 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:42.003] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 155 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:43.034] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 156 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:44.138] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 157 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:45.225] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 158 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:46.370] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 159 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:47.504] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 160 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:48.598] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 161 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:49.732] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 162 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:50.813] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 163 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:51.905] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 164 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:53.055] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 165 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:54.116] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 166 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:55.222] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 167 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:56.329] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 168 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:57.478] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 169 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:58.701] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 170 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:05:59.864] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 171 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:01.030] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 172 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:02.237] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 173 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:03.382] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 174 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:04.611] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 175 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:05.762] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 176 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:07.035] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 177 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:08.267] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 178 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:09.411] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 179 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:10.710] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 180 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:11.881] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 181 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:13.006] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 182 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:14.224] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 183 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:15.881] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 184 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:17.066] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 185 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:18.296] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 186 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:19.466] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 187 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:06:20.471] [bbotk] Evaluating 44 configuration(s)
+INFO  [16:06:20.604] [mlr3] Running benchmark with 440 resampling iterations
+INFO  [16:10:52.585] [mlr3] Finished benchmark
+INFO  [16:10:57.442] [bbotk] Result of batch 3:
+INFO  [16:10:57.452] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [16:10:57.452] [bbotk]      -2.653003        253               54        0.4291150       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.353316        255               41        0.4310780       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.384618        246               37        0.4298805       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.491680        241              139        0.4791367       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.170700        240               21        0.4141111       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.947967        233               49        0.4216031       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.127235        247               94        0.4467278       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.176171        224               59        0.4361623       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.944524        228              105        0.4165921       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.009107        208               32        0.4137658       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.222881        252               46        0.7476147       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.093052        231               44        0.4255567       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.053077        229               35        0.4587586       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.295199        228               47        0.4229796       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.910158        220               26        0.4238855       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.019541        227               52        0.4226818       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.841353        213              132        0.4305167       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.859052        196               38        0.4580354       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.228109        229               30        0.4186869       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.590919        254               32        0.4115333       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.156690        171              131        0.4185429       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.211568        230               36        0.4180576       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.779738        191               28        0.7358760       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.905548        248               30        0.4162355       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.372565        156               36        0.4778837       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.053146        163              121        0.4175428       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.381591        180              126        0.4721459       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.340608        255              115        0.6796864       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.931988        159               84        0.4404331       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.358753        252               59        0.4730829       FALSE
+INFO  [16:10:57.452] [bbotk]      -4.120172        188               35        0.4170187       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.072542        224               44        0.4152241       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.318518        158              200        0.4729545       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.133437        224              125        0.4724094       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.857719        227               32        0.4384982       FALSE
+INFO  [16:10:57.452] [bbotk]      -2.010123        180               36        0.4510918       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.344433        177              124        0.4163021       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.372712        158              125        0.5695107       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.955266        122               29        0.4740894       FALSE
+INFO  [16:10:57.452] [bbotk]      -4.157960        156              124        0.5491415       FALSE
+INFO  [16:10:57.452] [bbotk]      -1.824710         14              109        0.4170452       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.996362        202               44        0.4636989       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.487988        157              128        0.5548329       FALSE
+INFO  [16:10:57.452] [bbotk]      -3.646322        122              129        0.4235343       FALSE
+INFO  [16:10:57.452] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [16:10:57.452] [bbotk]    lambda_l1  lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate
+INFO  [16:10:57.452] [bbotk]   0.90881411 -6.9077553         -6.723897 -6.673151 2026-07-01 16:05:29
+INFO  [16:10:57.452] [bbotk]   1.01498075 -3.8302558         -6.750533 -6.647287 2026-07-01 16:05:31
+INFO  [16:10:57.452] [bbotk]   0.93501991  3.3167553         -6.735926 -6.210952 2026-07-01 16:05:32
+INFO  [16:10:57.452] [bbotk]   0.14100932  1.2924734         -6.772367 -5.512036 2026-07-01 16:05:33
+INFO  [16:10:57.452] [bbotk]   1.28904287 -6.9077553         -6.173282 -5.606503 2026-07-01 16:05:34
+INFO  [16:10:57.452] [bbotk]   0.67567930  6.1545742         -6.907755 -5.567194 2026-07-01 16:05:35
+INFO  [16:10:57.452] [bbotk]   0.86844678 -6.9077553         -6.782866 -5.905969 2026-07-01 16:05:36
+INFO  [16:10:57.452] [bbotk]   1.49835534 -5.4415443         -6.907755 -5.743733 2026-07-01 16:05:37
+INFO  [16:10:57.452] [bbotk]   1.45751668  1.6626046         -6.907755 -5.372191 2026-07-01 16:05:38
+INFO  [16:10:57.452] [bbotk]  -0.12894784  0.8767702         -6.742590 -5.166035 2026-07-01 16:05:39
+INFO  [16:10:57.452] [bbotk]   0.87936369 -5.2913488         -4.481814 -5.266948 2026-07-01 16:05:40
+INFO  [16:10:57.452] [bbotk]   1.29394096 -5.7423328         -2.302585 -5.640815 2026-07-01 16:05:41
+INFO  [16:10:57.452] [bbotk]   0.04599111 -5.5800705         -4.043784 -5.354078 2026-07-01 16:05:42
+INFO  [16:10:57.452] [bbotk]  -0.03033713 -6.0533026         -6.736813 -5.629390 2026-07-01 16:05:43
+INFO  [16:10:57.452] [bbotk]   0.37061919 -0.8115863         -6.808353 -5.164749 2026-07-01 16:05:45
+INFO  [16:10:57.452] [bbotk]   0.80460723 -6.7287562         -6.767803 -5.544587 2026-07-01 16:05:46
+INFO  [16:10:57.452] [bbotk]   0.87175946  3.3313382         -6.277079 -5.109075 2026-07-01 16:05:47
+INFO  [16:10:57.452] [bbotk]   0.85007678 -6.9077553         -4.206793 -5.006842 2026-07-01 16:05:48
+INFO  [16:10:57.452] [bbotk]   0.40699022 -5.6263796         -5.328089 -5.100160 2026-07-01 16:05:49
+INFO  [16:10:57.452] [bbotk]   0.60897279 -5.4916342         -6.898496 -5.500399 2026-07-01 16:05:50
+INFO  [16:10:57.452] [bbotk]   1.40824940  3.2180265         -3.006644 -5.019882 2026-07-01 16:05:51
+INFO  [16:10:57.452] [bbotk]   0.66154442 -5.6269110         -6.753789 -5.662711 2026-07-01 16:05:52
+INFO  [16:10:57.452] [bbotk]   0.82234343 -5.0793117         -6.907755 -4.928627 2026-07-01 16:05:53
+INFO  [16:10:57.452] [bbotk]   1.19380933 -5.2577922         -6.795797 -5.075672 2026-07-01 16:05:55
+INFO  [16:10:57.452] [bbotk]   0.92583584 -5.3761832         -6.879290 -5.089261 2026-07-01 16:05:56
+INFO  [16:10:57.452] [bbotk]   0.83015453 -5.5287881         -5.761742 -5.075343 2026-07-01 16:05:57
+INFO  [16:10:57.452] [bbotk]   1.45927780  2.9173422         -2.302585 -4.858979 2026-07-01 16:05:58
+INFO  [16:10:57.452] [bbotk]  -2.28029975 -5.4984063         -6.745925 -4.799229 2026-07-01 16:05:59
+INFO  [16:10:57.452] [bbotk]   1.57473312 -5.4776967         -2.681587 -4.675947 2026-07-01 16:06:00
+INFO  [16:10:57.452] [bbotk]  -1.29473019 -3.4818004         -2.302585 -4.730156 2026-07-01 16:06:01
+INFO  [16:10:57.452] [bbotk]   1.36230998 -1.9809696         -6.816143 -4.905107 2026-07-01 16:06:03
+INFO  [16:10:57.452] [bbotk]  -3.72301158 -6.3132184         -6.780157 -4.855516 2026-07-01 16:06:04
+INFO  [16:10:57.452] [bbotk]   0.86839263  3.7864026         -3.023366 -4.684255 2026-07-01 16:06:05
+INFO  [16:10:57.452] [bbotk]  -3.58170817  3.4604924         -2.423260 -4.736386 2026-07-01 16:06:06
+INFO  [16:10:57.452] [bbotk]   0.72146362 -5.4060289         -4.412267 -4.862210 2026-07-01 16:06:08
+INFO  [16:10:57.452] [bbotk]  -1.88331040 -6.9077553         -4.535817 -4.624521 2026-07-01 16:06:09
+INFO  [16:10:57.452] [bbotk]   1.52061802  4.1648624         -3.671527 -4.746834 2026-07-01 16:06:10
+INFO  [16:10:57.452] [bbotk]  -4.06663769  4.3456931         -4.493916 -4.543495 2026-07-01 16:06:11
+INFO  [16:10:57.452] [bbotk]   1.75501216 -6.1659762         -6.796300 -4.689921 2026-07-01 16:06:12
+INFO  [16:10:57.452] [bbotk]  -6.86357738  3.3493986         -2.422993 -4.564604 2026-07-01 16:06:13
+INFO  [16:10:57.452] [bbotk]   1.19421846 -5.4443564         -6.770829 -4.830419 2026-07-01 16:06:15
+INFO  [16:10:57.452] [bbotk]   1.58321764  0.8894462         -6.711177 -4.489702 2026-07-01 16:06:16
+INFO  [16:10:57.452] [bbotk]  -4.61246607  3.2465343         -2.461785 -4.574195 2026-07-01 16:06:18
+INFO  [16:10:57.452] [bbotk]   1.55841429  5.2441332         -2.933335 -4.542974 2026-07-01 16:06:19
+INFO  [16:10:57.452] [bbotk]    lambda_l1  lambda_l2 min_gain_to_split    acq_cb timestamp_surrogate
+INFO  [16:10:57.452] [bbotk]  timestamp_acq_function timestamp_acq_optimizer      timestamp_loop classif.ce
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:30     2026-07-01 16:05:30 2026-07-01 16:05:30  0.3235326
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:31     2026-07-01 16:05:31 2026-07-01 16:05:32  0.3235197
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:32     2026-07-01 16:05:32 2026-07-01 16:05:33  0.3239943
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:33     2026-07-01 16:05:33 2026-07-01 16:05:34  0.3236235
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:34     2026-07-01 16:05:34 2026-07-01 16:05:35  0.3237699
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:35     2026-07-01 16:05:35 2026-07-01 16:05:36  0.3260818
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:36     2026-07-01 16:05:36 2026-07-01 16:05:37  0.3239943
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:37     2026-07-01 16:05:37 2026-07-01 16:05:38  0.3239145
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:38     2026-07-01 16:05:38 2026-07-01 16:05:39  0.3240035
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:39     2026-07-01 16:05:39 2026-07-01 16:05:40  0.3237551
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:40     2026-07-01 16:05:40 2026-07-01 16:05:41  0.3256165
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:42     2026-07-01 16:05:42 2026-07-01 16:05:42  0.3241593
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:43     2026-07-01 16:05:43 2026-07-01 16:05:43  0.3239702
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:44     2026-07-01 16:05:44 2026-07-01 16:05:45  0.3241685
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:45     2026-07-01 16:05:45 2026-07-01 16:05:46  0.3244318
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:46     2026-07-01 16:05:46 2026-07-01 16:05:47  0.3237254
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:47     2026-07-01 16:05:47 2026-07-01 16:05:48  0.3239349
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:48     2026-07-01 16:05:48 2026-07-01 16:05:49  0.3240814
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:49     2026-07-01 16:05:49 2026-07-01 16:05:50  0.3238979
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:50     2026-07-01 16:05:50 2026-07-01 16:05:51  0.3235122
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:51     2026-07-01 16:05:51 2026-07-01 16:05:52  0.3244133
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:53     2026-07-01 16:05:53 2026-07-01 16:05:53  0.3255071
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:54     2026-07-01 16:05:54 2026-07-01 16:05:55  0.3260225
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:55     2026-07-01 16:05:55 2026-07-01 16:05:56  0.3241778
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:56     2026-07-01 16:05:56 2026-07-01 16:05:57  0.3234622
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:57     2026-07-01 16:05:57 2026-07-01 16:05:58  0.3242464
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:58     2026-07-01 16:05:58 2026-07-01 16:05:59  0.3247099
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:05:59     2026-07-01 16:05:59 2026-07-01 16:06:00  0.3253477
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:01     2026-07-01 16:06:01 2026-07-01 16:06:01  0.3245597
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:02     2026-07-01 16:06:02 2026-07-01 16:06:03  0.3236568
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:03     2026-07-01 16:06:03 2026-07-01 16:06:04  0.3248712
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:04     2026-07-01 16:06:04 2026-07-01 16:06:05  0.3244837
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:05     2026-07-01 16:06:05 2026-07-01 16:06:06  0.3248712
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:07     2026-07-01 16:06:07 2026-07-01 16:06:08  0.3238979
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:08     2026-07-01 16:06:08 2026-07-01 16:06:09  0.3242483
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:09     2026-07-01 16:06:09 2026-07-01 16:06:10  0.3242279
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:10     2026-07-01 16:06:10 2026-07-01 16:06:11  0.3251066
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:11     2026-07-01 16:06:11 2026-07-01 16:06:12  0.3250325
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:13     2026-07-01 16:06:13 2026-07-01 16:06:13  0.3245226
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:14     2026-07-01 16:06:14 2026-07-01 16:06:15  0.3259891
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:15     2026-07-01 16:06:15 2026-07-01 16:06:16  0.3288072
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:17     2026-07-01 16:06:17 2026-07-01 16:06:18  0.3248768
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:18     2026-07-01 16:06:18 2026-07-01 16:06:19  0.3248953
+INFO  [16:10:57.452] [bbotk]     2026-07-01 16:06:19     2026-07-01 16:06:19 2026-07-01 16:06:20  0.3264452
+INFO  [16:10:57.452] [bbotk]  timestamp_acq_function timestamp_acq_optimizer      timestamp_loop classif.ce
+INFO  [16:10:57.452] [bbotk]  warnings errors runtime_learners internal_tuned_values
+INFO  [16:10:57.452] [bbotk]         0      0          217.856    num_iterations=346
+INFO  [16:10:57.452] [bbotk]         0      0          183.041    num_iterations=291
+INFO  [16:10:57.452] [bbotk]         0      0          186.451    num_iterations=267
+INFO  [16:10:57.452] [bbotk]         0      0          187.568    num_iterations=297
+INFO  [16:10:57.452] [bbotk]         0      0          157.158    num_iterations=231
+INFO  [16:10:57.452] [bbotk]         0      0          918.617   num_iterations=1262
+INFO  [16:10:57.452] [bbotk]         0      0          153.644    num_iterations=234
+INFO  [16:10:57.452] [bbotk]         0      0          155.604    num_iterations=222
+INFO  [16:10:57.452] [bbotk]         0      0          149.273    num_iterations=207
+INFO  [16:10:57.452] [bbotk]         0      0          126.591    num_iterations=235
+INFO  [16:10:57.452] [bbotk]         0      0          110.757    num_iterations=137
+INFO  [16:10:57.452] [bbotk]         0      0          116.125    num_iterations=187
+INFO  [16:10:57.452] [bbotk]         0      0          128.860    num_iterations=220
+INFO  [16:10:57.452] [bbotk]         0      0          152.449    num_iterations=272
+INFO  [16:10:57.452] [bbotk]         0      0          101.561    num_iterations=153
+INFO  [16:10:57.452] [bbotk]         0      0          129.059    num_iterations=200
+INFO  [16:10:57.452] [bbotk]         0      0          268.912    num_iterations=413
+INFO  [16:10:57.452] [bbotk]         0      0          138.425    num_iterations=247
+INFO  [16:10:57.452] [bbotk]         0      0          287.792    num_iterations=477
+INFO  [16:10:57.452] [bbotk]         0      0          180.180    num_iterations=284
+INFO  [16:10:57.452] [bbotk]         0      0          356.362    num_iterations=568
+INFO  [16:10:57.452] [bbotk]         0      0           84.278    num_iterations=106
+INFO  [16:10:57.452] [bbotk]         0      0           90.392    num_iterations=133
+INFO  [16:10:57.452] [bbotk]         0      0          134.347    num_iterations=183
+INFO  [16:10:57.452] [bbotk]         0      0          207.043    num_iterations=433
+INFO  [16:10:57.452] [bbotk]         0      0          161.926    num_iterations=308
+INFO  [16:10:57.452] [bbotk]         0      0          404.960    num_iterations=635
+INFO  [16:10:57.452] [bbotk]         0      0          231.847    num_iterations=334
+INFO  [16:10:57.452] [bbotk]         0      0          117.898    num_iterations=215
+INFO  [16:10:57.452] [bbotk]         0      0          346.069    num_iterations=567
+INFO  [16:10:57.452] [bbotk]         0      0          617.469    num_iterations=960
+INFO  [16:10:57.452] [bbotk]         0      0          120.099    num_iterations=224
+INFO  [16:10:57.452] [bbotk]         0      0          383.984    num_iterations=608
+INFO  [16:10:57.452] [bbotk]         0      0          365.718    num_iterations=579
+INFO  [16:10:57.452] [bbotk]         0      0          122.666    num_iterations=189
+INFO  [16:10:57.452] [bbotk]         0      0          114.902    num_iterations=233
+INFO  [16:10:57.452] [bbotk]         0      0          442.136    num_iterations=665
+INFO  [16:10:57.452] [bbotk]         0      0          355.653    num_iterations=568
+INFO  [16:10:57.452] [bbotk]         0      0          158.164    num_iterations=301
+INFO  [16:10:57.452] [bbotk]         0      0          532.203    num_iterations=853
+INFO  [16:10:57.452] [bbotk]         0      0          139.129    num_iterations=614
+INFO  [16:10:57.452] [bbotk]         0      0          567.143    num_iterations=824
+INFO  [16:10:57.452] [bbotk]         0      0          361.734    num_iterations=621
+INFO  [16:10:57.452] [bbotk]         0      0          598.567    num_iterations=967
+INFO  [16:10:57.452] [bbotk]  warnings errors runtime_learners internal_tuned_values
+INFO  [16:10:57.740] [mlr3] Calling train method of fallback 'regr.ranger' on task 'surrogate_task' with 188 observations {learner: <LearnerRegrRanger/LearnerRegr/Learner/R6>}
+INFO  [16:10:57.801] [bbotk] Finished optimizing after 188 evaluation(s)
+INFO  [16:10:57.803] [bbotk] Result:
+INFO  [16:10:57.807] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [16:10:57.807] [bbotk]          <num>      <int>            <int>            <num>      <lgcl>
+INFO  [16:10:57.807] [bbotk]      -2.356728        252               45        0.4306777       FALSE
+INFO  [16:10:57.807] [bbotk]  lambda_l1 lambda_l2 min_gain_to_split internal_tuned_values learner_param_vals
+INFO  [16:10:57.807] [bbotk]      <num>     <num>             <num>                <list>             <list>
+INFO  [16:10:57.807] [bbotk]  0.8721669 -5.275399         -6.737402    num_iterations=293         <list[12]>
+INFO  [16:10:57.807] [bbotk]   x_domain classif.ce
+INFO  [16:10:57.807] [bbotk]     <list>      <num>
+INFO  [16:10:57.807] [bbotk]  <list[8]>  0.3234084

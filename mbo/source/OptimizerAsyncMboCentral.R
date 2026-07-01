@@ -154,40 +154,40 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
       }
 
       # initialize optimization
-      instance$archive$start_time = Sys.time()
-      get_private(instance)$.initialize_context(self)
-      call_back("on_optimization_begin", instance$objective$callbacks, instance$objective$context)
+      inst$archive$start_time = Sys.time()
+      get_private(inst)$.initialize_context(self)
+      call_back("on_optimization_begin", inst$objective$callbacks, inst$objective$context)
 
       # send design to workers
       if (!is.null(design)) {
-        instance$archive$push_points(transpose_list(design))
+        inst$archive$push_points(transpose_list(design))
       }
 
       if (getOption("bbotk.debug", FALSE)) {
         # debug mode runs .optimize() in main process
-        rush = rush::RushWorker$new(instance$rush$network_id)
-        instance$rush = rush
-        instance$archive$rush = rush
+        rush = rush::RushWorker$new(inst$rush$network_id)
+        inst$rush = rush
+        inst$archive$rush = rush
         worker_type = "debug_local"
 
-        call_back("on_worker_begin", instance$objective$callbacks, instance$objective$context)
+        call_back("on_worker_begin", inst$objective$callbacks, inst$objective$context)
 
         # run optimizer loop
-        private$.optimize(instance)
+        private$.optimize(inst)
 
-        call_back("on_worker_end", instance$objective$callbacks, instance$objective$context)
+        call_back("on_worker_end", inst$objective$callbacks, inst$objective$context)
       } else {
         # run .optimize() on workers
-        rush = instance$rush
+        rush = inst$rush
         worker_type = rush::rush_config()$worker_type %??% "mirai"
 
         if (worker_type == "script") {
           # worker script
           rush$worker_script(
             worker_loop = bbotk_worker_loop,
-            packages = c(self$packages, instance$objective$packages, "bbotk"),
+            packages = c(self$packages, inst$objective$packages, "bbotk"),
             optimizer = self,
-            instance = instance
+            instance = inst
           )
 
           rush$wait_for_workers(n = 1)
@@ -196,9 +196,9 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
           worker_ids = rush$start_workers(
             n_workers = n_workers,
             worker_loop = bbotk_worker_loop,
-            packages = c(self$packages, instance$objective$packages, "bbotk"),
+            packages = c(self$packages, inst$objective$packages, "bbotk"),
             optimizer = self,
-            instance = instance
+            instance = inst
           )
 
           rush$wait_for_workers(n = 1, worker_ids)
@@ -207,9 +207,9 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
           worker_ids = rush$start_local_workers(
             n_workers = n_workers,
             worker_loop = bbotk_worker_loop,
-            packages = c(self$packages, instance$objective$packages, "bbotk"),
+            packages = c(self$packages, inst$objective$packages, "bbotk"),
             optimizer = self,
-            instance = instance
+            instance = inst
           )
 
           rush$wait_for_workers(n = 1, worker_ids)
@@ -218,9 +218,9 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
 
       lg$info(
         "Starting to optimize %i parameter(s) with '%s' and '%s' on %s %s worker(s)",
-        instance$search_space$length,
+        inst$search_space$length,
         self$format(),
-        instance$terminator$format(with_params = TRUE),
+        inst$terminator$format(with_params = TRUE),
         as.character(rush::rush_config()$n_workers %??% ""),
         worker_type
       )
@@ -228,7 +228,7 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
       n_running_workers = 0
       # wait until optimization is finished
       # check terminated workers when the terminator is "none"
-      while (!instance$is_terminated) {
+      while (!inst$is_terminated) {
         Sys.sleep(1)
 
         if (rush$n_running_workers > n_running_workers) {
@@ -241,12 +241,12 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
 
         # print evaluations
         if (getOption("bbotk.tiny_logging", FALSE)) {
-          tiny_logging(instance, self)
+          tiny_logging(inst, self)
         } else {
-          new_results = instance$rush$fetch_new_tasks()
+          new_results = inst$rush$fetch_new_tasks()
           if (nrow(new_results)) {
             lg$info("Results of %i configuration(s):", nrow(new_results))
-            setcolorder(new_results, c(instance$archive$cols_y, instance$archive$cols_x, "timestamp_xs", "timestamp_ys"))
+            setcolorder(new_results, c(inst$archive$cols_y, inst$archive$cols_x, "timestamp_xs", "timestamp_ys"))
             cns = setdiff(colnames(new_results), c("pid", "x_domain", "keys"))
             lg$info(capture.output(print(
               new_results[, cns, with = FALSE],
