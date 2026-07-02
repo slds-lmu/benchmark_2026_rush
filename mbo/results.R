@@ -60,10 +60,12 @@ aggregated = imap_dtr(results, function(results, task_id) {
   })
 }, .idcol = "task_id")
 
-cols = c("runtime_learners", "runtime_surrogate", "runtime_optimizer", "mean_runtime_learners", "walltime", "cpu_hours")
+cols = c("runtime_learners", "runtime_surrogate", "runtime_optimizer", "walltime", "cpu_hours")
 aggregated[, (cols) := map(.SD, round, 0), .SDcols = cols]
 cols = c("utilization", "performance")
 aggregated[, (cols) := map(.SD, signif, 2), .SDcols = cols]
+cols = c("mean_runtime_learners")
+aggregated[, (cols) := map(.SD, signif, 1), .SDcols = cols]
 
 setcolorder(aggregated, c("task_id", "algorithm", "runtime_learners", "runtime_surrogate", "runtime_optimizer", "mean_runtime_learners", "walltime", "cpu_hours", "evals", "performance", "utilization"))
 
