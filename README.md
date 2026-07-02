@@ -1,6 +1,6 @@
 # Benchmark 2026 rush
 
-Benchmark suite for the `rush` [paper](https://arxiv.org/abs/2606.21430v1).
+Benchmark suite for the `rush` [paper](https://arxiv.org/abs/2606.21430).
 Experiments are designed to run at HPC scale (hundreds of workers) on a SLURM cluster via [HyperQueue](https://it4innovations.github.io/hyperqueue/).
 
 The suite has two independent parts:
