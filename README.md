@@ -1,5 +1,7 @@
 # Benchmark 2026 rush
 
+[![DOI](https://zenodo.org/badge/1155470781.svg)](https://doi.org/10.5281/zenodo.21135663)
+
 Benchmark suite for the `rush` [paper](https://arxiv.org/abs/2606.21430).
 Experiments are designed to run at HPC scale (hundreds of workers) on a SLURM cluster via [HyperQueue](https://it4innovations.github.io/hyperqueue/).
 
