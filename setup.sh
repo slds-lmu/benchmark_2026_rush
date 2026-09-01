@@ -1,11 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-# conda create -y -n benchmark_2026_rush
+conda create -y -n benchmark_2026_rush
 conda activate benchmark_2026_rush
-# conda install -y r-base=4.6.0 redis-server libhiredis zlib libuv icu
-
-#  libpng r-igraph
+conda install -y r-base=4.6.0 redis-server libhiredis zlib libuv icu
 
 # redux cannot find libhiredis without this
 export PKG_CONFIG_PATH=$CONDA_PREFIX/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}
@@ -24,11 +22,11 @@ Rscript - <<'EOF'
 options("install.opts" = "--without-keep.source")
 options("renv.config.pak.enabled" = TRUE)
 
-#install.packages("renv")
+install.packages("renv")
 
 renv::init(bare = TRUE)
 renv::load(".")
-#install.packages("pak")
+install.packages("pak")
 
 # this steps needs a github PAT
 renv::install(
