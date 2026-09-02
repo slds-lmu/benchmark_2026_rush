@@ -3,6 +3,7 @@ library(batchtools)
 library(microbenchmark)
 
 registry = "registries/rush_local"
+dir.create("rush_local/results", recursive = TRUE, showWarnings = FALSE)
 
 # Push running tasks
 reg = loadRegistry(file.dir = file.path(registry, "push_running_tasks"))
