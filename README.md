@@ -20,14 +20,14 @@ The full stack targets a Linux HPC login/compute environment:
 - conda — provides `r-base` (4.6.0), `redis-server`, `libhiredis`, and supporting libraries.
 - renv — pins the R package library.
 - HyperQueue (`hq`, v0.26.2) — meta-scheduler that submits work to SLURM. 
-Installed into the project root by `setup.sh`.
+Installed into the project root by `setup_hpc.sh`.
 - SLURM — HPC job scheduler that HyperQueue submits to.
 - Redis — shared key–value store that rush workers coordinate through.
 
 ## Setup
 
 The setup depends on the HPC environment. 
-The `setup.sh` script is a convenience wrapper that creates/activates a conda environment, installs R + system dependencies, downloads the HyperQueue binary, and initializes the renv library.
+The `setup_hpc.sh` script is a convenience wrapper that creates/activates a conda environment, installs R + system dependencies, downloads the HyperQueue binary, and initializes the renv library.
 
 ## Running the cluster backend
 
@@ -38,13 +38,13 @@ Once the server is up and Redis is reachable, run the experiments below.
 
 ## Running locally
 
-`setup-local.sh` is the single-machine counterpart of `setup.sh`: same conda environment and renv library, but no HyperQueue binary and no SLURM.
+`setup_local.sh` is the single-machine counterpart of `setup_hpc.sh`: same conda environment and renv library, but no HyperQueue binary and no SLURM.
 
 [`rush_local/`](rush_local/) mirrors [`rush/`](rush/) with batchtools' `makeClusterFunctionsInteractive(external = TRUE)`, so the jobs of the parameter grid run sequentially, each in its own R process on the local machine.
 Registries are written to `registries/rush_local/` and results to `rush_local/results/`.
 
 ```r
-source("rush_local/run.R")      # runs all four experiments
+source("rush_local/run_all.R")      # runs all four experiments
 source("rush_local/results.R")  # writes the csv files
 ```
 
@@ -86,4 +86,4 @@ Each task is optimized under a fixed wall-clock budget of 10 minutes by three st
 | `central_mbo` | Asynchronous centralized MBO — one process proposes, workers evaluate asynchronously `OptimizerAsyncMboCentral.R`.       |
 | `async_mbo`   | Asynchronous decentralized MBO — every worker runs its own MBO loop against a shared rush archive `OptimizerAsyncMbo.R`. |
 
-Results are collected in `mbo/results/results.R` and aggregated in `mbo/results/aggregated.csv`.
+`mbo/experiment.R` runs all twelve task/strategy combinations and stores the raw archives in `mbo/results/results.rds`; `mbo/results.R` aggregates them into `mbo/results/aggregated.csv`.
