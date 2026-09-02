@@ -1,6 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
+# Local (single-machine) counterpart of setup.sh.
+# Same R stack, but no HyperQueue binary and no SLURM: the benchmarks in
+# rush_local/ run through batchtools' interactive cluster functions.
+
 # r-base 4.6.0 and redis-server come from conda-forge; the `defaults` channel has
 # neither. --override-channels also keeps `defaults` out of the solve, so
 # Anaconda's Terms of Service (which conda-forge does not carry) never apply.
@@ -14,14 +18,6 @@ conda install -y "${CONDA_CHANNEL_ARGS[@]}" r-base=4.6.0 redis-server libhiredis
 # redux cannot find libhiredis without this
 export PKG_CONFIG_PATH=$CONDA_PREFIX/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}
 export LD_LIBRARY_PATH=$CONDA_PREFIX/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
-
-# install HyperQueue (hq) binary into the project
-HQ_VERSION="0.26.2"
-HQ_TARBALL="hq-v${HQ_VERSION}-linux-x64.tar.gz"
-HQ_URL="https://github.com/It4innovations/hyperqueue/releases/download/v${HQ_VERSION}/${HQ_TARBALL}"
-curl -fsSL -o "${HQ_TARBALL}" "${HQ_URL}"
-tar -xzf "${HQ_TARBALL}"
-rm -f "${HQ_TARBALL}"
 
 # install R packages / set up renv
 Rscript - <<'EOF'

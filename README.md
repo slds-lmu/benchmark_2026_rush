@@ -11,6 +11,7 @@ The suite has two independent parts:
 |------------------|------------------------------------------------------------------------------------------------------|
 | [`rush/`](rush/) | Micro-benchmarks of rush's core Redis operations under varying load.                                 |
 | [`mbo/`](mbo/)   | Comparison of three distributed model-based optimization (MBO) strategies for hyperparameter tuning. |
+| [`rush_local/`](rush_local/) | The `rush/` micro-benchmarks, run locally instead of on a cluster (see [Running locally](#running-locally)). |
 
 ## Requirements
 
@@ -34,6 +35,21 @@ The `setup.sh` script is a convenience wrapper that creates/activates a conda en
 `redis_server.sh` starts a Redis server.
 
 Once the server is up and Redis is reachable, run the experiments below. 
+
+## Running locally
+
+`setup-local.sh` is the single-machine counterpart of `setup.sh`: same conda environment and renv library, but no HyperQueue binary and no SLURM.
+
+[`rush_local/`](rush_local/) mirrors [`rush/`](rush/) with batchtools' `makeClusterFunctionsInteractive(external = TRUE)`, so the jobs of the parameter grid run sequentially, each in its own R process on the local machine.
+Registries are written to `registries/rush_local/` and results to `rush_local/results/`.
+
+```r
+source("rush_local/run.R")      # runs all four experiments
+source("rush_local/results.R")  # writes the csv files
+```
+
+`redis-server` must be on the `PATH`; each job starts its own instance on a unix socket (`rush_local/helper.R`).
+The parameter grid and the `microbenchmark` repetition counts are identical to the HPC version, so a full local run takes considerably longer than the distributed one.
 
 ## Benchmarks
 
