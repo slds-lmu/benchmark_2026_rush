@@ -36,23 +36,22 @@ install.packages("pak")
 
 # this steps needs a github PAT
 renv::install(
-  "rush",
+  "rush@1.2.0",
   "microbenchmark",
   "mlr-org/batchtools",
-  "mlr3mbo",
-  "bbotk",
-  "mlr3tuning",
+  "mlr3mbo@1.2.1",
+  "bbotk@1.12.0",
+  "mlr3tuning@1.6.1",
   "mlr3oml",
-  "ranger",
-  "mlr3learners",
+  "ranger@0.18.0",
+  "mlr3learners@0.15.0",
   "rgenoud",
   "DiceKriging",
-  "mlr3",
-  "rpart",
-  "mlr3learners",
-  "xgboost",
-  "mlr-org/mlr3extralearners",
-  "lightgbm",
+  "mlr3@1.8.0",
+  "rpart@4.1.27",
+  "xgboost@3.2.1.1",
+  "mlr-org/mlr3extralearners@v1.6.0",
+  "lightgbm@4.6.0",
   "qs2"
 )
 EOF
