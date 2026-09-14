@@ -1,5 +1,5 @@
 start_redis = function(job) {
-  redis_file = sprintf("redis_%s", job$job.id)
+  redis_file = sprintf("redis_%i", Sys.getpid())
   socket_path = sprintf("/tmp/%s.sock", redis_file)
   system(sprintf("redis-server --port 0 --unixsocket %s --daemonize yes --pidfile /tmp/%s.pid --dir %s --save '' --appendonly no", socket_path, redis_file, tempdir()))
   timeout = Sys.time() + 30
