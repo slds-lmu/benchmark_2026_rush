@@ -22,11 +22,11 @@ batchMap(function(n_parameters, payload_size, .job) {
   rush = RushWorker$new("benchmark", config)
 
   xss = list(mlr3misc::set_names(replicate(n_parameters, list(runif(payload_size)), simplify = FALSE), paste0("x", seq(n_parameters))))
-  key = rush$push_running_tasks(xss)
   yss = list(mlr3misc::set_names(replicate(n_parameters, list(runif(payload_size)), simplify = FALSE), paste0("y", seq(n_parameters))))
 
   res = microbenchmark::microbenchmark(
     rush$finish_tasks(key, yss),
+    setup = { key = rush$push_running_tasks(xss) },
     unit = "ms",
     times = 10000
   )
