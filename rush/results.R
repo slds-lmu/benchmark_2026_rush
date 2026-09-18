@@ -4,16 +4,7 @@ library(microbenchmark)
 
 registry = "registries/"
 
-# Summarize the 10,000 replicates of one microbenchmark job.
-#
-# The tables used to report the median alone, which hides the tail: the reviewer
-# rightly noted that per-task overhead under contention is a tail-latency
-# question and that a single 17.77 ms cell points at a heavy-tailed
-# distribution. So the spread is reported as well — the interquartile range and
-# the 95th/99th percentiles — and a table can pick "median [IQR]" or
-# "median / p95" from these columns.
-#
-# `res$time` is in nanoseconds, every column below is in milliseconds.
+# summarize the 10,000 replicates of one microbenchmark job
 runtime_summary = function(reg, job_table) {
   stats = reduceResultsList(
     # pass the ids explicitly so the rows stay aligned with `job_table` even if a job is missing

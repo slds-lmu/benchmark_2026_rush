@@ -23,6 +23,12 @@ runtime = 600
 n_repls = 5L
 registry = "registries/mbo"
 
+large_objects_path = Sys.getenv(
+  "BENCHMARK_2026_RUSH_LARGE_OBJECTS",
+  file.path(getwd(), "mbo", "rush_objects")
+)
+dir.create(large_objects_path, recursive = TRUE, showWarnings = FALSE)
+
 mirai::daemons(0)
 mirai::daemons(0, .compute = "mlr3_parallelization")
 
@@ -65,8 +71,8 @@ cl_mbo = function(task, learner, resampling, measure, terminator, initial_design
 }
 
 
-central_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, ...) {
-  rush::rush_plan(n_workers = n_workers, config = config)
+central_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, large_objects_path, ...) {
+  rush::rush_plan(n_workers = n_workers, config = config, large_objects_path = large_objects_path)
 
   instance = ti_async(
     task = task,
@@ -89,8 +95,8 @@ central_mbo = function(task, learner, resampling, measure, terminator, initial_d
   instance$archive$data
 }
 
-async_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, ...) {
-  rush::rush_plan(n_workers = n_workers, config = config)
+async_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, large_objects_path, ...) {
+  rush::rush_plan(n_workers = n_workers, config = config, large_objects_path = large_objects_path)
 
   instance = ti_async(
     task = task,
@@ -131,7 +137,7 @@ reg = if (dir.exists(registry)) {
   ))
 
   batchMap(
-    function(algorithm, otask_id, repl, n_workers, runtime, config, algorithms) {
+    function(algorithm, otask_id, repl, n_workers, runtime, config, algorithms, large_objects_path) {
       renv::load(".")
       library(mlr3)
       library(mlr3tuning)
@@ -147,6 +153,9 @@ reg = if (dir.exists(registry)) {
       library(bbotk)
 
       walk(list.files("mbo/source", full.names = TRUE), source)
+
+      options(rush.max_object_size = 1)
+      unlink(list.files(large_objects_path, pattern = "\\.rds$", full.names = TRUE))
 
       initial_design = as.data.table(readRDS(initial_design_file(otask_id, repl)))
       initial_design[, batch_nr := 1]
@@ -175,7 +184,8 @@ reg = if (dir.exists(registry)) {
         terminator = terminator,
         initial_design = initial_design,
         n_workers = n_workers,
-        config = config
+        config = config,
+        large_objects_path = large_objects_path
       )
     },
     args = cells,
@@ -183,7 +193,8 @@ reg = if (dir.exists(registry)) {
       n_workers = n_workers,
       runtime = runtime,
       config = config,
-      algorithms = list("cl_mbo" = cl_mbo, "central_mbo" = central_mbo, "async_mbo" = async_mbo)
+      algorithms = list("cl_mbo" = cl_mbo, "central_mbo" = central_mbo, "async_mbo" = async_mbo),
+      large_objects_path = large_objects_path
     ),
     reg = reg
   )

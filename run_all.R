@@ -1,4 +1,4 @@
-source("mbo/initial_design.R")
+# source("mbo/initial_design.R")
 source("mbo/experiment.R")
 source("rush/experiment_fetch_finished_tasks_cache.R")
 source("rush/experiment_fetch_finished_tasks.R")
