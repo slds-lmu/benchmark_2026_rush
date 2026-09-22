@@ -1,0 +1,339 @@
+Waiting for workers to connect... 159/448
+Waiting for workers to connect... 178/448
+Waiting for workers to connect... 197/448
+Waiting for workers to connect... 221/448
+Waiting for workers to connect... 237/448
+Waiting for workers to connect... 254/448
+Waiting for workers to connect... 271/448
+Waiting for workers to connect... 288/448
+Waiting for workers to connect... 304/448
+Waiting for workers to connect... 326/448
+Waiting for workers to connect... 345/448
+Waiting for workers to connect... 362/448
+Waiting for workers to connect... 379/448
+Waiting for workers to connect... 396/448
+Waiting for workers to connect... 414/448
+Waiting for workers to connect... 438/448
+Waiting for workers to connect... 448/448
+INFO  [18:54:51.055] [bbotk] Starting to optimize 8 parameter(s) with '<OptimizerBatchRandomSearch>' and '<TerminatorEvals> [n_evals=100, k=0]'
+INFO  [18:54:51.154] [bbotk] Evaluating 100 configuration(s)
+INFO  [18:54:51.426] [mlr3] Running benchmark with 1000 resampling iterations
+INFO  [19:02:37.282] [mlr3] Finished benchmark
+INFO  [19:02:40.686] [bbotk] Result of batch 1:
+INFO  [19:02:40.698] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [19:02:40.698] [bbotk]     -4.0065092         49              199        0.2888075        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.4529122         72               17        0.3171782       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.5451902         37              119        0.5286410        TRUE
+INFO  [19:02:40.698] [bbotk]     -3.5021072        181               40        0.7521964        TRUE
+INFO  [19:02:40.698] [bbotk]     -1.2987040        124               65        0.8029107       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.8039178        162              176        0.3249913        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.8020004         89              164        0.9150707       FALSE
+INFO  [19:02:40.698] [bbotk]     -4.5915993        171               85        0.2334694        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.0194198         81               78        0.2038029       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.6746868         21              117        0.4612610        TRUE
+INFO  [19:02:40.698] [bbotk]     -3.0124129         56               10        0.1744482       FALSE
+INFO  [19:02:40.698] [bbotk]     -6.0604138         85                3        0.4964981        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.3284725         35              149        0.3635782        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.5210969        254               76        0.9902092       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.7560636         13              130        0.2900223        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.4736006        140              111        0.1371094        TRUE
+INFO  [19:02:40.698] [bbotk]     -4.9910811        254               65        0.2991594       FALSE
+INFO  [19:02:40.698] [bbotk]     -1.5328708        180              186        0.9595387        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.6840702        222              187        0.8090085       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.9932118         30              200        0.4503646        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.1779649         36               72        0.5791577        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.3472952         61               86        0.5685855        TRUE
+INFO  [19:02:40.698] [bbotk]     -4.7939935        183              155        0.5654796       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.2189584         69              156        0.5903234        TRUE
+INFO  [19:02:40.698] [bbotk]     -1.5643964        136              135        0.3168488        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.1081359        182               94        0.2837792       FALSE
+INFO  [19:02:40.698] [bbotk]     -6.0932620        182               54        0.7455857        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.2462238         91               37        0.6224094        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.6598000         62               46        0.5342748       FALSE
+INFO  [19:02:40.698] [bbotk]     -4.4441125         83               30        0.8375157       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.1627365        116              135        0.2863015        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.2344157        133              183        0.2897710       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.7146741         44               64        0.3792618       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.2013427        160               49        0.1630732       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.2951556         69               93        0.8458834       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.2303420         16               95        0.9331967       FALSE
+INFO  [19:02:40.698] [bbotk]     -5.0964947         46               52        0.1812898       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.1636321         67              152        0.3634721       FALSE
+INFO  [19:02:40.698] [bbotk]     -6.9075366        150               79        0.5054628       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.2118265         56              156        0.7948119        TRUE
+INFO  [19:02:40.698] [bbotk]     -1.7541481        230              199        0.6348456        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.9021980        211              106        0.4639049        TRUE
+INFO  [19:02:40.698] [bbotk]     -3.6248884         11              109        0.7319102       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.9246030         91               41        0.9569221       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.4523450        219               12        0.5654658       FALSE
+INFO  [19:02:40.698] [bbotk]     -4.7544986        190               14        0.8431214        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.7242114         96               44        0.9761282        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.5236501        163              178        0.5048723       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.8524898         64              181        0.1689330        TRUE
+INFO  [19:02:40.698] [bbotk]     -3.0987281        178              119        0.6600080        TRUE
+INFO  [19:02:40.698] [bbotk]     -0.3835546        188               53        0.9551987       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.8090028        250              139        0.3231817       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.3439797        230              189        0.2159818        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.2677720        242               40        0.7385210        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.3014744        159               61        0.2922894       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.7147579        174              144        0.2235635        TRUE
+INFO  [19:02:40.698] [bbotk]     -1.4172878        214              134        0.2519249       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.6615950         57              121        0.3733950        TRUE
+INFO  [19:02:40.698] [bbotk]     -4.4385915         31               68        0.7189953        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.6691056        205              167        0.1656101       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.9265804        121              128        0.6541923        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.6120103        172               67        0.8181623       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.1245798        120              115        0.7456972       FALSE
+INFO  [19:02:40.698] [bbotk]     -1.7036896        195              180        0.3077337        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.2470544         10              186        0.8768726       FALSE
+INFO  [19:02:40.698] [bbotk]     -6.6471708         74               69        0.1332768        TRUE
+INFO  [19:02:40.698] [bbotk]     -4.8183171         58               11        0.3762005       FALSE
+INFO  [19:02:40.698] [bbotk]     -1.7453920        253               54        0.2986109        TRUE
+INFO  [19:02:40.698] [bbotk]     -4.4205802        181               42        0.7161513        TRUE
+INFO  [19:02:40.698] [bbotk]     -3.4109869        165              195        0.6802046        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.5407617        127               67        0.6677779       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.1165726         55               30        0.8334693        TRUE
+INFO  [19:02:40.698] [bbotk]     -4.7203501        199               26        0.5534625       FALSE
+INFO  [19:02:40.698] [bbotk]     -0.9601889         91              168        0.9005772        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.5892466        248              189        0.3596658        TRUE
+INFO  [19:02:40.698] [bbotk]     -1.3461792        191               91        0.1705748       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.9321140        144              151        0.3374531        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.0080201         65               72        0.7025367       FALSE
+INFO  [19:02:40.698] [bbotk]     -4.7594199        246               85        0.4504077       FALSE
+INFO  [19:02:40.698] [bbotk]     -4.5284284        207               60        0.1695882        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.3932653        247              116        0.1080283       FALSE
+INFO  [19:02:40.698] [bbotk]     -5.4225505        239               98        0.2087363        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.0748823         92                2        0.3237776        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.6165892         44               97        0.7560640        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.7111156        181              198        0.4904844       FALSE
+INFO  [19:02:40.698] [bbotk]     -6.5537207         12              159        0.3808718       FALSE
+INFO  [19:02:40.698] [bbotk]     -3.8285365         25              118        0.4760535       FALSE
+INFO  [19:02:40.698] [bbotk]     -1.6465319         54              167        0.2484703       FALSE
+INFO  [19:02:40.698] [bbotk]     -4.9016719         71              196        0.7812412        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.2555261         24              113        0.4837836        TRUE
+INFO  [19:02:40.698] [bbotk]     -2.1078556         40                7        0.5653983        TRUE
+INFO  [19:02:40.698] [bbotk]     -1.6143972         25              129        0.2510982       FALSE
+INFO  [19:02:40.698] [bbotk]     -1.9436948         60              155        0.7604759       FALSE
+INFO  [19:02:40.698] [bbotk]     -6.4719293        109              124        0.3888313        TRUE
+INFO  [19:02:40.698] [bbotk]     -6.7063390        191              101        0.4970504       FALSE
+INFO  [19:02:40.698] [bbotk]     -4.8865807        105              195        0.7656881        TRUE
+INFO  [19:02:40.698] [bbotk]     -0.7220008        137               69        0.3789255        TRUE
+INFO  [19:02:40.698] [bbotk]     -5.1546459        107               22        0.9470714        TRUE
+INFO  [19:02:40.698] [bbotk]     -1.8040811        114               39        0.7721142       FALSE
+INFO  [19:02:40.698] [bbotk]     -2.8403803        220               30        0.8261863        TRUE
+INFO  [19:02:40.698] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [19:02:40.698] [bbotk]   lambda_l1   lambda_l2 min_gain_to_split classif.ce warnings errors
+INFO  [19:02:40.698] [bbotk]  -6.2150708 -1.34218756         -2.989658    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   3.3564167 -6.30475911         -6.206825    0.01778        0      0
+INFO  [19:02:40.698] [bbotk]   3.3916784 -6.51908731         -3.504238    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -5.5534183 -0.44200110         -5.272088    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   6.7471338  0.29915143         -5.041728    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -1.1979930  3.39425584         -3.956678    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   6.6728666 -0.10890604         -2.713117    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -6.2946170 -0.26458772         -2.490008    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.4162968 -4.11065487         -5.364288    0.01776        0      0
+INFO  [19:02:40.698] [bbotk]  -0.7489088  5.10104379         -5.277754    0.01766        0      0
+INFO  [19:02:40.698] [bbotk]   0.2692092 -2.84539130         -5.617745    0.01778        0      0
+INFO  [19:02:40.698] [bbotk]  -0.7475533 -4.90301389         -3.655543    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   4.8082781  6.28967724         -4.423080    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   2.1033887  0.66771240         -4.987549    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   3.2137282  0.99495895         -6.358822    0.01774        0      0
+INFO  [19:02:40.698] [bbotk]  -2.1748865 -6.90340034         -4.056035    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   4.1703523 -5.91627966         -3.938397    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -5.4956123 -1.34370436         -3.301763    0.01770        0      0
+INFO  [19:02:40.698] [bbotk]  -0.2186012 -1.34949264         -3.760827    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   1.2873805  2.73956123         -3.848168    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -0.7791256  3.52265273         -6.158244    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -2.3224760 -1.86005290         -6.220809    0.01774        0      0
+INFO  [19:02:40.698] [bbotk]   6.6199240 -1.79379635         -5.045019    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   6.6936848 -1.80633891         -6.108052    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -0.4533379  2.33804416         -5.119706    0.01776        0      0
+INFO  [19:02:40.698] [bbotk]  -3.2285037 -5.40935887         -4.495432    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -5.0218122  1.10214355         -3.775773    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   0.6976280 -2.37228765         -3.961006    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   6.6673555 -4.11284592         -6.757030    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   2.5217396 -3.94422973         -5.010522    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   5.6391114 -5.16122139         -6.706897    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   4.3737079 -4.99126063         -4.450758    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -3.0574268  2.61806909         -5.234772    0.01778        0      0
+INFO  [19:02:40.698] [bbotk]   0.1538960 -5.65952478         -2.483555    0.02352        0      0
+INFO  [19:02:40.698] [bbotk]  -5.4105379 -6.66920265         -2.376027    0.01768        0      0
+INFO  [19:02:40.698] [bbotk]  -4.2338414 -1.29584504         -3.175895    0.01770        0      0
+INFO  [19:02:40.698] [bbotk]   1.7321591  6.30802133         -4.463600    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   2.6349235  1.65670805         -2.429842    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   6.6639152 -1.13216229         -3.072026    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   5.4988940 -4.69105171         -2.616174    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   3.5492107  6.50016752         -6.901884    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -3.1873513  2.99494526         -5.126287    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.0150873 -4.34928714         -3.758898    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   5.7024965 -0.77102498         -5.702876    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   4.2628637  4.14024474         -4.359860    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -5.7084991 -0.94883299         -4.107396    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -2.8578462 -4.33789595         -4.205392    0.01768        0      0
+INFO  [19:02:40.698] [bbotk]  -6.2626601 -1.43825293         -2.440882    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.7379221  2.00286924         -4.443907    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.1806300 -0.37531203         -6.803672    0.01774        0      0
+INFO  [19:02:40.698] [bbotk]  -1.9107001  4.33903633         -4.510634    0.01766        0      0
+INFO  [19:02:40.698] [bbotk]   3.7053354  4.46416906         -3.446475    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   2.7923980  1.47937027         -5.827078    0.01774        0      0
+INFO  [19:02:40.698] [bbotk]  -2.0239328 -3.29341712         -3.595788    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   5.2442626 -0.52024665         -4.115005    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -2.2353175  2.41172166         -4.020824    0.01760        0      0
+INFO  [19:02:40.698] [bbotk]   3.6761870  4.86543025         -2.750697    0.01776        0      0
+INFO  [19:02:40.698] [bbotk]   6.7518541 -3.79121573         -3.854580    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   5.0477711 -3.36836017         -4.504567    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   3.3600297  1.48857956         -4.521551    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -3.2081153 -1.76689553         -4.152203    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   6.0963241  6.43322694         -3.577965    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -2.9228649 -2.90662088         -4.567170    0.01770        0      0
+INFO  [19:02:40.698] [bbotk]   4.0198330  3.73451992         -5.697660    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -5.7319154  1.34927276         -4.345155    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   1.9647217 -0.04591830         -2.313845    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   3.2205389 -6.44337177         -3.165119    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -1.5434309 -4.46811884         -3.956410    0.01776        0      0
+INFO  [19:02:40.698] [bbotk]   6.7020208  3.10973990         -5.684508    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -6.8464522  2.39710874         -2.567553    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -3.8237179 -0.97141248         -4.378539    0.01776        0      0
+INFO  [19:02:40.698] [bbotk]   2.5702320  4.47099908         -3.248244    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.3366246 -5.06906986         -4.144710    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -1.4608295  6.34836802         -3.880440    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -6.3507354  0.73783631         -4.054369    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.9026013  0.03891168         -5.430113    0.01774        0      0
+INFO  [19:02:40.698] [bbotk]   1.5292937  2.69661943         -4.192673    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.2369309  2.35153294         -6.217316    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   1.3615129 -2.23478632         -4.621910    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -5.4728134  4.46983388         -4.650820    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   3.2137113  4.01038779         -6.753926    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   2.0136346 -2.26032627         -4.401440    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   1.3052075  1.54350015         -4.647204    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   5.9832990 -6.16082241         -5.517974    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   2.6046295 -0.67371606         -4.082287    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -4.3594868 -6.43294990         -5.186441    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   4.8239700 -2.73459255         -2.853279    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   1.2616309 -5.40761958         -4.275813    0.01774        0      0
+INFO  [19:02:40.698] [bbotk]  -6.9039827  2.10634717         -6.292176    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   1.5598616 -2.09886669         -5.781832    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -6.3169063  3.40514905         -6.070762    0.01770        0      0
+INFO  [19:02:40.698] [bbotk]   1.9692804  0.67343153         -5.452635    0.01778        0      0
+INFO  [19:02:40.698] [bbotk]   4.7104245  0.64222184         -2.675016    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   2.1167095  1.00815773         -5.028722    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -6.5553672 -4.42010321         -3.151387    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]   3.5951638  4.01951821         -2.785472    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -6.1152612 -4.84234199         -2.414393    0.01778        0      0
+INFO  [19:02:40.698] [bbotk]   1.9550348 -0.14746398         -6.862687    0.01780        0      0
+INFO  [19:02:40.698] [bbotk]  -5.7128759 -0.98522885         -6.233149    0.01778        0      0
+INFO  [19:02:40.698] [bbotk]   2.3154808  2.56365554         -4.671015    0.01778        0      0
+INFO  [19:02:40.698] [bbotk]   lambda_l1   lambda_l2 min_gain_to_split classif.ce warnings errors
+INFO  [19:02:40.698] [bbotk]  runtime_learners internal_tuned_values
+INFO  [19:02:40.698] [bbotk]            28.179      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            29.994      num_iterations=7
+INFO  [19:02:40.698] [bbotk]            26.820      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            33.183      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            16.143      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            26.464      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            16.470      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            27.335      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            30.882      num_iterations=4
+INFO  [19:02:40.698] [bbotk]            31.883     num_iterations=30
+INFO  [19:02:40.698] [bbotk]            30.071     num_iterations=11
+INFO  [19:02:40.698] [bbotk]            33.748      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            24.456      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            28.146      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            26.357     num_iterations=25
+INFO  [19:02:40.698] [bbotk]            25.615      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            27.668      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            26.705      num_iterations=9
+INFO  [19:02:40.698] [bbotk]            28.955      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            27.332      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            26.257      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            34.832     num_iterations=18
+INFO  [19:02:40.698] [bbotk]            23.307      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            21.277      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            28.784     num_iterations=10
+INFO  [19:02:40.698] [bbotk]            39.007      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            24.253      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.375      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            24.031      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            29.179      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            23.044      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            26.943      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            33.991      num_iterations=8
+INFO  [19:02:40.698] [bbotk]            26.856     num_iterations=34
+INFO  [19:02:40.698] [bbotk]            33.337     num_iterations=11
+INFO  [19:02:40.698] [bbotk]            31.823     num_iterations=20
+INFO  [19:02:40.698] [bbotk]            26.515      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            30.833      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            24.517      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            17.274      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            22.391      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            29.010      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.234      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            18.220      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            32.056      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            34.547      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            31.394     num_iterations=31
+INFO  [19:02:40.698] [bbotk]            34.527      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            22.270      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            31.789     num_iterations=26
+INFO  [19:02:40.698] [bbotk]            24.470     num_iterations=10
+INFO  [19:02:40.698] [bbotk]            26.344      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            22.264     num_iterations=19
+INFO  [19:02:40.698] [bbotk]            29.873      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            20.820      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.814     num_iterations=23
+INFO  [19:02:40.698] [bbotk]            24.017     num_iterations=13
+INFO  [19:02:40.698] [bbotk]            20.791      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            15.444      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            22.932      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            27.059      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            13.618      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            34.792     num_iterations=24
+INFO  [19:02:40.698] [bbotk]            21.233      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            20.968      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            20.386      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            28.594      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            27.293      num_iterations=7
+INFO  [19:02:40.698] [bbotk]            13.821      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            20.284      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            36.195     num_iterations=12
+INFO  [19:02:40.698] [bbotk]            18.198      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            49.642      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            18.058      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.867      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            27.640     num_iterations=11
+INFO  [19:02:40.698] [bbotk]            23.728      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.590      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            31.188      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            21.340      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            21.444      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            21.892      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            24.387      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            13.519      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            28.947      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.963      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            23.264      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.478      num_iterations=6
+INFO  [19:02:40.698] [bbotk]            19.707      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.442      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            32.591     num_iterations=38
+INFO  [19:02:40.698] [bbotk]            25.117      num_iterations=3
+INFO  [19:02:40.698] [bbotk]            14.128      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            23.750      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            41.388      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            16.875      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            25.343      num_iterations=2
+INFO  [19:02:40.698] [bbotk]            19.564      num_iterations=1
+INFO  [19:02:40.698] [bbotk]            36.517      num_iterations=7
+INFO  [19:02:40.698] [bbotk]            19.945     num_iterations=11
+INFO  [19:02:40.698] [bbotk]  runtime_learners internal_tuned_values
+INFO  [19:02:40.794] [bbotk] Finished optimizing after 100 evaluation(s)
+INFO  [19:02:40.795] [bbotk] Result:
+INFO  [19:02:40.799] [bbotk]  learning_rate num_leaves min_data_in_leaf feature_fraction extra_trees
+INFO  [19:02:40.799] [bbotk]          <num>      <int>            <int>            <num>      <lgcl>
+INFO  [19:02:40.799] [bbotk]     -0.7147579        174              144        0.2235635        TRUE
+INFO  [19:02:40.799] [bbotk]  lambda_l1 lambda_l2 min_gain_to_split internal_tuned_values learner_param_vals
+INFO  [19:02:40.799] [bbotk]      <num>     <num>             <num>                <list>             <list>
+INFO  [19:02:40.799] [bbotk]  -2.235318  2.411722         -4.020824     num_iterations=23         <list[12]>
+INFO  [19:02:40.799] [bbotk]   x_domain classif.ce
+INFO  [19:02:40.799] [bbotk]     <list>      <num>
+INFO  [19:02:40.799] [bbotk]  <list[8]>     0.0176

@@ -314,7 +314,7 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
               xs = transpose_list(xdt)[[1]]
               extra = xs[names(xs) %nin% inst$archive$cols_x]
               xs = xs[inst$archive$cols_x]
-              inst$archive$push_points(list(xs), extra = list(extra))
+              inst$archive$push_points(list(xs), xss_extra = list(extra))
               lg$debug("Proposed new point and pushed to queue")
             }
           }
@@ -460,7 +460,7 @@ OptimizerAsyncMboCentral = R6Class("OptimizerAsyncMboCentral",
 
           mlr3misc::call_back("on_optimizer_queue_after_eval", inst$objective$callbacks, inst$objective$context)
 
-          inst$archive$push_result(task$key, ys, x_domain = xs_trafoed)
+          inst$archive$finish_point(task$key, ys, x_domain = xs_trafoed)
         } else {
           # no points in queue, wait for main process to add more
           Sys.sleep(0.1)

@@ -2,12 +2,24 @@ library(data.table)
 library(ggplot2)
 library(mlr3misc)
 
-results = set_names(readRDS("mbo/results/results.rds"), c("german-credit", "kddcup09-appetency", "adult", "airlines"))
+task_names = c("31" = "german-credit", "3945" = "kddcup09-appetency", "7592" = "adult", "189354" = "airlines")
+algorithms = c("cl_mbo", "central_mbo", "async_mbo")
 
-aggregated = imap_dtr(results, function(results, task_id) {
-  imap_dtr(results, function(result, algorithm) {
+# one file per (algorithm, task, repl), exported after submission returns.
+pattern = sprintf("^(%s)_([0-9]+)_([0-9]+)\\.rds$", paste(algorithms, collapse = "|"))
+files = list.files("mbo/results", pattern = pattern)
+if (!length(files)) {
+  stopf("No result files in mbo/results, run mbo/experiment.R first")
+}
 
-    archive = copy(result)
+aggregated = map_dtr(files, function(file) {
+  cell = regmatches(file, regexec(pattern, file))[[1]]
+  algorithm = cell[[2]]
+  otask_id = cell[[3]]
+  repl = as.integer(cell[[4]])
+
+  result = readRDS(file.path("mbo/results", file))
+  archive = copy(result)
 
   if ("timestamp_xs" %in% colnames(archive)) {
     # remove initial design
@@ -46,6 +58,8 @@ aggregated = imap_dtr(results, function(results, task_id) {
   cpu_time = walltime * 448L
 
   data.table(
+    repl = repl,
+    task_id = task_names[[otask_id]],
     algorithm = algorithm,
     runtime_learners = runtime_learners,
     runtime_surrogate = runtime_surrogate,
@@ -57,9 +71,20 @@ aggregated = imap_dtr(results, function(results, task_id) {
     evals = evals,
     performance = min(archive$classif.ce, na.rm = TRUE)
   )
-  })
-}, .idcol = "task_id")
+})
 
-setcolorder(aggregated, c("task_id", "algorithm", "runtime_learners", "runtime_surrogate", "runtime_optimizer", "mean_runtime_learners", "walltime", "cpu_hours", "evals", "performance", "utilization"))
+# keep task and algorithm in benchmark order rather than alphabetical file order
+aggregated[, task_id := factor(task_id, levels = task_names)]
+aggregated[, algorithm := factor(algorithm, levels = algorithms)]
+setorder(aggregated, repl, task_id, algorithm)
+
+setcolorder(aggregated, c("repl", "task_id", "algorithm", "runtime_learners", "runtime_surrogate", "runtime_optimizer", "mean_runtime_learners", "walltime", "cpu_hours", "evals", "performance", "utilization"))
 
 fwrite(aggregated, "mbo/results/aggregated.csv")
+
+# mean over repls
+measures = setdiff(colnames(aggregated), c("repl", "task_id", "algorithm"))
+aggregated_mean = aggregated[, lapply(.SD, mean, na.rm = TRUE), by = c("task_id", "algorithm"), .SDcols = measures]
+aggregated_mean[, repls := aggregated[, .N, by = c("task_id", "algorithm")]$N]
+
+fwrite(aggregated_mean, "mbo/results/aggregated_mean.csv")

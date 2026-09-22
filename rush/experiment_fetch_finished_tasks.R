@@ -1,7 +1,7 @@
 library(batchtools)
 library(data.table)
 
-registry = "/dss/lxclscratch/00/ra98ror2/registries/benchmark_2026_rush/rush/fetch_finished_tasks"
+registry = "registries/fetch_finished_tasks"
 
 unlink(registry, recursive = TRUE)
 reg = makeRegistry(
@@ -15,12 +15,12 @@ reg$cluster.functions = makeClusterFunctionsHyperQueue()
 
 batchMap(function(n_tasks, n_parameters, payload_size, .job) {
   renv::load(".")
-  set.seed(7832)
   library(rush)
   lgr::get_logger("mlr3")$set_threshold("warn")
 
   config = start_redis(.job)
   rush = RushWorker$new("benchmark", config)
+  on.exit(try(rush$connector$SHUTDOWN(), silent = TRUE), add = TRUE)
 
   setup = function() {
     rush$reset(workers = FALSE)
@@ -38,7 +38,6 @@ batchMap(function(n_tasks, n_parameters, payload_size, .job) {
     unit = "ms",
     setup = setup()
   )
-  try({rush$connector$SHUTDOWN()}, silent = TRUE)
   res
 }, args = CJ(
   n_tasks = c(1, 10, 100, 1e3, 1e4, 1e5),

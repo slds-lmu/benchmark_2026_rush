@@ -1,98 +1,80 @@
-library(mlr3)
-library(mlr3tuning)
-library(mlr3oml)
-library(mlr3mbo)
-library(mirai)
-library(rush)
-library(mlr3extralearners)
+library(batchtools)
+library(data.table)
 library(mlr3misc)
 
+source("mbo/helper.R")
+
 n_workers = 448L
-local = FALSE
+n_repls = 5L
+registry = "registries/initial_design"
 
-#  31L credit g
-#  3945L KDDCup09_appetency
-#  7592L Adult
-#  189354L Airlines
+dir.create("mbo/results", recursive = TRUE, showWarnings = FALSE)
+dir.create("registries", showWarnings = FALSE)
 
-initial_designs = set_names(map(c(31L, 3945L, 7592L, 189354L), function(otask_id) { # 3L, 7592L, 189354L  # 31L, 3945L, 7592L, 189354L
 
-  # tuning instance
-  otask = otsk(id = otask_id)
-  task = as_task(otask)
-  resampling = as_resampling(otask)
-  measure = msr("classif.ce")
-  terminator = trm("evals", n_evals = 100)
-
-  learner = set_validate(lrn("classif.lightgbm",
-    early_stopping_rounds = 100,
-    learning_rate     = to_tune(1e-3, 1, logscale = TRUE),
-    feature_fraction  = to_tune(0.1, 1),
-    min_data_in_leaf  = to_tune(1, 200),
-    num_leaves        = to_tune(10, 255),
-    extra_trees       = to_tune(),
-    lambda_l1         = to_tune(1e-3, 1e3, logscale = TRUE),
-    lambda_l2         = to_tune(1e-3, 1e3, logscale = TRUE),
-    min_gain_to_split = to_tune(1e-3, 0.1, logscale = TRUE),
-    num_iterations    = to_tune(1, 5000, internal = TRUE),
-    eval       = "binary_error"
-  ), "test")
-
-  daemons(0, .compute =  "mlr3_parallelization")
-
-  file = file(sprintf("logs/initial_design_%i.log", otask_id), open = "wt")
-  sink(file)
-  sink(file, type = "message")
-
-  log_dir = "logs"
-  if (local) {
-    daemons(n_workers, .compute = "mlr3_parallelization")
-  } else {
-    daemons(
-      n = n_workers,
-      url = host_url(port = 5554),
-      .compute = "mlr3_parallelization",
-      remote = remote_config(
-        command = "hq",
-        args = c(
-        "submit",
-        "--cpus", "1",
-        "--stdout=none",#, file.path(log_dir, "stdout-%{JOB_ID}-%{TASK_ID}.txt"),
-        "--stderr=none",#, file.path(log_dir, "stderr-%{JOB_ID}-%{TASK_ID}.txt"),
-        "--", "."),
-        quote = FALSE
-      )
-    )
-  }
-
-  Sys.sleep(2)
-
-  while (mirai::status(.compute = "mlr3_parallelization")$connections < n_workers) {
-    Sys.sleep(10)
-    mlr3misc::messagef("Waiting for workers to connect... %i/%i", mirai::status(.compute = "mlr3_parallelization")$connections, n_workers)
-  }
-
-  instance = ti(
-    task = task,
-    learner = learner,
-    resampling = resampling,
-    measures = measure,
-    terminator = terminator,
-    store_benchmark_result = FALSE
+reg = if (dir.exists(registry)) {
+  loadRegistry(registry, writeable = TRUE)
+} else {
+  reg = makeRegistry(
+    file.dir = registry,
+    conf.file = NA,
+    seed = 7832,
+    packages = "renv",
+    source = "mbo/helper.R"
   )
 
-  tuner = tnr("random_search", batch_size = 100L)
+  batchMap(
+    function(otask_id, repl, n_workers) {
+      renv::load(".")
+      library(mlr3)
+      library(mlr3tuning)
+      library(mlr3oml)
+      library(mlr3mbo)
+      library(mirai)
+      library(rush)
+      library(mlr3extralearners)
+      library(mlr3misc)
 
-  tuner$optimize(instance)
+      # tuning instance
+      otask = otsk(id = otask_id)
+      task = as_task(otask)
+      resampling = as_resampling(otask)
+      measure = msr("classif.ce")
+      terminator = trm("evals", n_evals = 100)
 
-  archive = instance$archive$data[, c(instance$archive$cols_x, instance$archive$cols_y), with = FALSE]
+      learner = mbo_learner()
 
-  mirai::daemons(0, .compute = "mlr3_parallelization")
-  sink(NULL)
-  sink(NULL, type = "message")
+      on.exit(stop_daemons("mlr3_parallelization"))
 
-  archive
-}), c("31", "3945", "7592", "189354"))
+      start_daemons(n_workers, "mlr3_parallelization")
 
+      instance = ti(
+        task = task,
+        learner = learner,
+        resampling = resampling,
+        measures = measure,
+        terminator = terminator,
+        store_benchmark_result = FALSE
+      )
 
-saveRDS(initial_design, "initial_designs.rds")
+      tuner = tnr("random_search", batch_size = 100L)
+
+      tuner$optimize(instance)
+
+      instance$archive$data[, c(instance$archive$cols_x, instance$archive$cols_y), with = FALSE]
+    },
+    args = as.data.table(expand.grid(otask_id = otask_ids, repl = seq_len(n_repls))),
+    more.args = list(n_workers = n_workers),
+    reg = reg
+  )
+
+  reg
+}
+
+reg$cluster.functions = makeClusterFunctionsInteractive(external = TRUE)
+
+# runs the cells one by one, each in its own R process
+submitJobs(findNotDone(reg = reg), reg = reg)
+
+# export the designs
+export_results(reg, function(cell) initial_design_file(cell$otask_id, cell$repl))

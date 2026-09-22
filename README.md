@@ -1,6 +1,6 @@
 # Benchmark 2026 rush
 
-[![DOI](https://zenodo.org/badge/1155470781.svg)](https://doi.org/10.5281/zenodo.21135663)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21135663.svg)](https://doi.org/10.5281/zenodo.21135663)
 
 Benchmark suite for the `rush` [paper](https://arxiv.org/abs/2606.21430).
 Experiments are designed to run at HPC scale (hundreds of workers) on a SLURM cluster via [HyperQueue](https://it4innovations.github.io/hyperqueue/).
@@ -20,42 +20,77 @@ The full stack targets a Linux HPC login/compute environment:
 - conda — provides `r-base` (4.6.0), `redis-server`, `libhiredis`, and supporting libraries.
 - renv — pins the R package library.
 - HyperQueue (`hq`, v0.26.2) — meta-scheduler that submits work to SLURM. 
-Installed into the project root by `setup_hpc.sh`.
+  Installed into the project root by `setup_hpc.sh`.
 - SLURM — HPC job scheduler that HyperQueue submits to.
 - Redis — shared key–value store that rush workers coordinate through.
 
-## Setup
+## Runbook
 
-The setup depends on the HPC environment. 
-The `setup_hpc.sh` script is a convenience wrapper that creates/activates a conda environment, installs R + system dependencies, downloads the HyperQueue binary, and initializes the renv library.
+How to reproduce a full HPC run from a fresh clone.
+Run all commands from the repository root on a login node, using Bash.
+The project directory must be accessible at the same path on every compute node.
+The sections below explain each step.
 
-## Running the cluster backend
+```sh
+# 0. Make conda available on LRZ systems.
+#    On other systems e.g. `module load conda`.
+source ~/.conda_init
 
-`hq_server.sh` starts the HyperQueue server and registers a SLURM automatic allocator.
-`redis_server.sh` starts a Redis server.
+# 1. Setup conda environment, `hq` binary, R library from renv.lock.
+./setup_hpc.sh
 
-Once the server is up and Redis is reachable, run the experiments below. 
+# 2. Activate the conda environment and add hq to the PATH.
+conda activate benchmark_2026_rush
+export PATH="$PWD:$PATH"
 
-## Running locally
+# 3. Adapt hq_workers.sh and hq_env.sh to the site.
 
-`setup_local.sh` is the single-machine counterpart of `setup_hpc.sh`: same conda environment and renv library, but no HyperQueue binary and no SLURM.
+# 4. Bring up the backend.
+#    Use separate tmux panes.
+./hq_server.sh
+./hq_workers.sh
+./redis_server.sh
 
-[`rush_local/`](rush_local/) mirrors [`rush/`](rush/) with batchtools' `makeClusterFunctionsInteractive(external = TRUE)`, so the jobs of the parameter grid run sequentially, each in its own R process on the local machine.
-Registries are written to `registries/rush_local/` and results to `rush_local/results/`.
+# 5. Run the benchmarks.
+#    Keep this in tmux as well.
+Rscript run_all.R
 
-```r
-source("rush_local/run_all.R")      # runs all four experiments
-source("rush_local/results.R")  # writes the csv files
+# 6. Wait for all four rush registries to finish before aggregation.
+#    Then aggregate into the CSV files.
+Rscript -e 'source("rush/results.R")'
+Rscript -e 'source("mbo/results.R")'
+
+# 7. Tear the backend down.
+./hq_clean.sh
 ```
 
-`redis-server` must be on the `PATH`; each job starts its own instance on a unix socket (`rush_local/helper.R`).
-The parameter grid and the `microbenchmark` repetition counts are identical to the HPC version, so a full local run takes considerably longer than the distributed one.
+### Site-specific settings
+
+What to check when moving the suite to another cluster. 
+The MBO scripts request 448 workers regardless of the SLURM allocation; provide at least that many CPUs.
+
+| Where                          | Setting                                   | Value here                                 | What to check                                                                                                |
+|--------------------------------|-------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| `hq_env.sh`                    | Slurm + conda init on the *compute* nodes | `module load slurm_setup`, `~/.conda_init` |                                                                                                              |
+| `hq_workers.sh`, `hq_clean.sh` | `SLURM_CLUSTERS`                          | `cm4`                                      | Only needed where the login node's default cluster is the wrong one. Drop the line on a single-cluster site. |
+| `hq_workers.sh`                | `--partition`, `--qos`                    | `cm4_std`                                  | Must permit a multi-node job. A tiny or single-node partition cannot run this.                               |
+| `hq_workers.sh`                | `N_NODES`, `CPUS_PER_NODE`                | 4 × 112                                    | The product must be at least 448.                                                                            |
+| `hq_workers.sh`                | `--time`                                  | `24:00:00`                                 | The worker `--time-limit` inside `WORKER_CMD`.                                                               |
+
+### Configuration
+
+Paths and hosts that depend on the site are read from the environment, with defaults that work in a fresh clone:
+
+| Variable                            | Default                      | Meaning                                                                                                                                                     |
+|-------------------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `BENCHMARK_2026_RUSH_REDIS_HOST`    | this node's hostname         | Host of the shared Redis used by `mbo/`. Defaulting to `Sys.info()[["nodename"]]` is correct as long as R and `redis_server.sh` run on the same login node. |
+| `BENCHMARK_2026_RUSH_REDIS_PORT`    | `6379`                       | Port of that Redis. Set the matching `--port` in `redis_server.sh`.                                                                                         |
+| `BENCHMARK_2026_RUSH_LARGE_OBJECTS` | `<project>/mbo/rush_objects` | Shared directory for large rush objects. All compute nodes must be able to read and write it at the same absolute path.                                     |
 
 ## Benchmarks
 
 ### rush
 
-Uses [batchtools](https://mlr-org.com/batchtools) with the HyperQueue cluster functions. 
 Each job starts a private Redis instance (`rush/helper.R`), builds a `RushWorker`, and times a single rush operation with `microbenchmark` across a grid of payload shapes (`n_parameters`, `payload_size`, `n_tasks`).
 
 | Experiment                                | Operation benchmarked                           |
@@ -69,7 +104,7 @@ Results are collected in `rush/results/`.
 
 ### mbo
 
-Tunes a `LightGBM` classifier (9 hyperparameters) on four OpenML classification tasks:
+Tunes a `LightGBM` classifier (8 search-space hyperparameters plus internally tuned boosting iterations) on four OpenML classification tasks:
 
 | OpenML task id | Dataset            |
 |----------------|--------------------|
@@ -78,7 +113,8 @@ Tunes a `LightGBM` classifier (9 hyperparameters) on four OpenML classification 
 | 7592           | adult              |
 | 189354         | airlines           |
 
-Each task is optimized under a fixed wall-clock budget of 10 minutes by three strategies, all sharing the same 100-point initial design (`mbo/initial_design.R`).
+Each task is optimized with a wall-clock termination budget of 10 minutes by three strategies, all sharing the same 100-point initial design (`mbo/initial_design.R`).
+The whole grid is replicated 5 times.
 
 | Name in code  | Strategy                                                                                                                 |
 |---------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -86,4 +122,27 @@ Each task is optimized under a fixed wall-clock budget of 10 minutes by three st
 | `central_mbo` | Asynchronous centralized MBO — one process proposes, workers evaluate asynchronously `OptimizerAsyncMboCentral.R`.       |
 | `async_mbo`   | Asynchronous decentralized MBO — every worker runs its own MBO loop against a shared rush archive `OptimizerAsyncMbo.R`. |
 
-`mbo/experiment.R` runs all twelve task/strategy combinations and stores the raw archives in `mbo/results/results.rds`; `mbo/results.R` aggregates them into `mbo/results/aggregated.csv`.
+`mbo/experiment.R` runs all task/strategy combinations. 
+Results are collected in `mbo/results/`.
+
+## Reproducibility
+
+`renv.lock` pins R packages and the setup scripts pin direct conda dependencies.
+All batchtools registries use `seed = 7832`, seeding payloads and initial designs.
+MBO results vary with worker randomness and asynchronous execution.
+Compare the five replications using `aggregated_mean.csv` and see `aggregated.csv` for individual runs.
+
+## Running locally
+
+`setup_local.sh` is the single-machine counterpart of `setup_hpc.sh`.
+
+[`rush_local/`](rush_local/) mirrors [`rush/`](rush/) with batchtools'.
+The jobs of the parameter grid run sequentially, each in its own R process on the local machine.
+Registries are written to `registries/rush_local/` and results to `rush_local/results/`.
+
+```sh
+./setup_local.sh
+conda activate benchmark_2026_rush
+Rscript rush_local/run_all.R
+Rscript rush_local/results.R
+```

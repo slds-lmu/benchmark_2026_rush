@@ -10,31 +10,36 @@ library(R6)
 library(checkmate)
 library(data.table)
 library(bbotk)
+library(batchtools)
 
-lg = lgr::get_logger("mlr3/mlr3mbo")
+source("mbo/helper.R")
 
 walk(list.files("mbo/source", full.names = TRUE), source)
-
-unlink("mbo/logs", recursive = TRUE)
-dir.create("mbo/logs")
+dir.create("mbo/results", recursive = TRUE, showWarnings = FALSE)
+dir.create("registries", showWarnings = FALSE)
 
 n_workers = 448L
 runtime = 600
-initial_designs = readRDS("mbo/initial_designs.rds")
+n_repls = 5L
+registry = "registries/mbo"
+
+large_objects_path = Sys.getenv(
+  "BENCHMARK_2026_RUSH_LARGE_OBJECTS",
+  file.path(getwd(), "mbo", "rush_objects")
+)
+dir.create(large_objects_path, recursive = TRUE, showWarnings = FALSE)
 
 mirai::daemons(0)
 mirai::daemons(0, .compute = "mlr3_parallelization")
 
-
 config = redux::redis_config(
-  host = "cm4login2",
-  port = 6379)
-
+  host = Sys.getenv("BENCHMARK_2026_RUSH_REDIS_HOST", Sys.info()[["nodename"]]),
+  port = Sys.getenv("BENCHMARK_2026_RUSH_REDIS_PORT", "6379")
+)
 
 if (!redux::redis_available(config)) {
   stop("Redis is not available")
 }
-
 
 cl_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, ...) {
   instance = ti(
@@ -66,8 +71,8 @@ cl_mbo = function(task, learner, resampling, measure, terminator, initial_design
 }
 
 
-central_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, ...) {
-  rush::rush_plan(n_workers = n_workers, config = config)
+central_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, large_objects_path, ...) {
+  rush::rush_plan(n_workers = n_workers, config = config, large_objects_path = large_objects_path)
 
   instance = ti_async(
     task = task,
@@ -90,8 +95,8 @@ central_mbo = function(task, learner, resampling, measure, terminator, initial_d
   instance$archive$data
 }
 
-async_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, ...) {
-  rush::rush_plan(n_workers = n_workers, config = config)
+async_mbo = function(task, learner, resampling, measure, terminator, initial_design, n_workers, config, large_objects_path, ...) {
+  rush::rush_plan(n_workers = n_workers, config = config, large_objects_path = large_objects_path)
 
   instance = ti_async(
     task = task,
@@ -113,104 +118,96 @@ async_mbo = function(task, learner, resampling, measure, terminator, initial_des
   instance$archive$data
 }
 
-results = pmap(
-  list(otask_id = c(31L, 3945L, 7592L, 189354L), initial_design = initial_designs),
-  function(otask_id, initial_design) {
-    data.table::setDT(initial_design)
-    initial_design[, batch_nr := 1]
+reg = if (dir.exists(registry)) {
+  loadRegistry(registry, writeable = TRUE)
+} else {
+  reg = makeRegistry(
+    file.dir = registry,
+    conf.file = NA,
+    seed = 7832,
+    packages = "renv",
+    source = "mbo/helper.R"
+  )
 
-    # tuning instance
-    otask = otsk(id = otask_id)
-    task = as_task(otask)
-    resampling = as_resampling(otask)
-    measure = msr("classif.ce")
-    terminator = trm("run_time", secs = runtime)
+  cells = as.data.table(expand.grid(
+    algorithm = c("cl_mbo", "central_mbo", "async_mbo"),
+    otask_id = otask_ids,
+    repl = seq_len(n_repls),
+    stringsAsFactors = FALSE
+  ))
 
-    learner = set_validate(
-      lrn(
-        "classif.lightgbm",
-        early_stopping_rounds = 100,
-        learning_rate = to_tune(1e-3, 1, logscale = TRUE),
-        feature_fraction = to_tune(0.1, 1),
-        min_data_in_leaf = to_tune(1, 200),
-        num_leaves = to_tune(10, 255),
-        extra_trees = to_tune(),
-        lambda_l1 = to_tune(1e-3, 1e3, logscale = TRUE),
-        lambda_l2 = to_tune(1e-3, 1e3, logscale = TRUE),
-        min_gain_to_split = to_tune(1e-3, 0.1, logscale = TRUE),
-        num_iterations = to_tune(1, 5000, internal = TRUE),
-        eval = "binary_error"
-      ),
-      "test"
-    )
+  batchMap(
+    function(algorithm, otask_id, repl, n_workers, runtime, config, algorithms, large_objects_path) {
+      renv::load(".")
+      library(mlr3)
+      library(mlr3tuning)
+      library(mlr3oml)
+      library(mlr3mbo)
+      library(mirai)
+      library(rush)
+      library(mlr3extralearners)
+      library(mlr3misc)
+      library(R6)
+      library(checkmate)
+      library(data.table)
+      library(bbotk)
 
-    mlr3misc::imap(
-      list("cl_mbo" = cl_mbo, "central_mbo" = central_mbo, "async_mbo" = async_mbo),
-      function(algorithm, name) {
-        profile = if (name == "cl_mbo") "mlr3_parallelization" else NULL
+      walk(list.files("mbo/source", full.names = TRUE), source)
 
-        on.exit({
-          mirai::daemons(0, .compute = profile)
-          sink(NULL)
-          sink(NULL, type = "message")
-        })
+      options(rush.max_object_size = 1)
+      unlink(list.files(large_objects_path, pattern = "\\.rds$", full.names = TRUE))
 
-        daemons(0, .compute = profile)
+      initial_design = as.data.table(readRDS(initial_design_file(otask_id, repl)))
+      initial_design[, batch_nr := 1]
 
-        file = file(sprintf("mbo/logs/%s_%i.log", name, otask_id), open = "wt")
-        sink(file)
-        sink(file, type = "message")
+      # tuning instance
+      otask = otsk(id = otask_id)
+      task = as_task(otask)
+      resampling = as_resampling(otask)
+      measure = msr("classif.ce")
+      terminator = trm("run_time", secs = runtime)
 
-        log_dir = "mbo/logs"
+      learner = mbo_learner()
 
-        daemons(
-          n = n_workers,
-          url = host_url(port = 5554),
-          .compute = profile,
-          remote = remote_config(
-            command = "hq",
-            args = c(
-              "submit",
-              "--cpus",
-              "1",
-              # "--stdout", file.path(log_dir, "stdout-%{JOB_ID}-%{TASK_ID}.txt"),
-              # "--stderr ", file.path(log_dir, "stderr-%{JOB_ID}-%{TASK_ID}.txt"),
-              "--stdout=none",
-              "--stderr=none",
-              "--",
-              "."
-            ),
-            quote = FALSE
-          )
-        )
-      
-        Sys.sleep(2)
+      profile = if (algorithm == "cl_mbo") "mlr3_parallelization" else NULL
 
-        while (mirai::status(.compute = profile)$connections < n_workers) {
-          Sys.sleep(10)
-          mlr3misc::messagef(
-            "Waiting for workers to connect... %i/%i",
-            mirai::status(.compute = profile)$connections,
-            n_workers
-          )
-        }
+      on.exit(stop_daemons(profile))
 
-        archive = mlr3misc::invoke(
-          algorithm,
-          task = task,
-          learner = learner,
-          resampling = resampling,
-          measure = measure,
-          terminator = terminator,
-          initial_design = initial_design,
-          n_workers = n_workers,
-          config = config
-        )
+      start_daemons(n_workers, profile)
 
-        archive
-      }
-    )
-  }
-)
+      mlr3misc::invoke(
+        algorithms[[algorithm]],
+        task = task,
+        learner = learner,
+        resampling = resampling,
+        measure = measure,
+        terminator = terminator,
+        initial_design = initial_design,
+        n_workers = n_workers,
+        config = config,
+        large_objects_path = large_objects_path
+      )
+    },
+    args = cells,
+    more.args = list(
+      n_workers = n_workers,
+      runtime = runtime,
+      config = config,
+      algorithms = list("cl_mbo" = cl_mbo, "central_mbo" = central_mbo, "async_mbo" = async_mbo),
+      large_objects_path = large_objects_path
+    ),
+    reg = reg
+  )
 
-saveRDS(results, "mbo/results/results.rds")
+  reg
+}
+
+reg$cluster.functions = makeClusterFunctionsInteractive(external = TRUE)
+
+# runs the cells one by one, each in its own R process
+submitJobs(findNotDone(reg = reg), reg = reg)
+
+# export the results
+export_results(reg, function(cell) {
+  sprintf("mbo/results/%s_%i_%i.rds", cell$algorithm, cell$otask_id, cell$repl)
+})

@@ -1,0 +1,18 @@
+slurmstepd: error: Could not run slurm task_prolog [/etc/slurm/task.prolog]: No such file or directory
+slurmstepd: error: Could not run slurm task_prolog [/etc/slurm/task.prolog]: No such file or directory
+slurmstepd: error: execve(): bash: No such file or directory
+slurmstepd: error: Could not run slurm task_epilog [/etc/slurm/task.epilog]: access denied
+srun: error: cm4r13c04s06: task 0: Exited with exit code 2
+slurmstepd: error: Could not run slurm task_prolog [/etc/slurm/task.prolog]: No such file or directory
+slurmstepd: error: execve(): bash: No such file or directory
+slurmstepd: error: Could not run slurm task_epilog [/etc/slurm/task.epilog]: access denied
+slurmstepd: error: Could not run slurm task_prolog [/etc/slurm/task.prolog]: No such file or directory
+slurmstepd: error: execve(): bash: No such file or directory
+srun: error: cm4r13c06s05: task 2: Exited with exit code 2
+slurmstepd: error: Could not run slurm task_epilog [/etc/slurm/task.epilog]: access denied
+srun: error: cm4r13c04s08: task 1: Exited with exit code 2
+slurmstepd: error: Could not run slurm task_prolog [/etc/slurm/task.prolog]: No such file or directory
+srun: error: cm4r13c06s06: task 3: Exited with exit code 2
+slurmstepd: error: execve(): bash: No such file or directory
+slurmstepd: error: Could not run slurm task_epilog [/etc/slurm/task.epilog]: access denied
+slurmstepd: error: Could not run slurm task_epilog [/etc/slurm/task.epilog]: access denied

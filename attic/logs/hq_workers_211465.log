@@ -1,0 +1,119 @@
+2026-09-09T13:09:29Z INFO HyperQueue v0.26.2
+2026-09-09T13:09:29Z INFO SLURM environment detected
+2026-09-09T13:09:29Z INFO Detected 540609736704B of memory (503.48 GiB)
+2026-09-09T13:09:29Z INFO Starting hyperqueue worker
+2026-09-09T13:09:29Z INFO Connecting to: cm4login2:40773
+2026-09-09T13:09:29Z INFO Listening on port 41433
+2026-09-09T13:09:29Z INFO Connecting to server (candidate addresses = [10.0.1.43:40773])
++-------------------+---------------------------------------------------------------------------+
+| Worker            | 1                                                                         |
+| State             | RUNNING                                                                   |
+| Hostname          | cm4r13c03s01                                                              |
+| Started           | "2026-09-09T13:09:29.594226789Z"                                          |
+| Data provider     | cm4r13c03s01:41433                                                        |
+| Working directory | /dss/lxclscratch/00/ra98ror2/ra98ror2/tmp.XxoAeErcLo/hq-workerkbqAYE/work |
+| Heartbeat         | 8s                                                                        |
+| Idle timeout      | 2h                                                                        |
+| Overview interval | None                                                                      |
+| Resources         | cpus: 112                                                                 |
+|                   | mem: 503.48 GiB                                                           |
+| Time Limit        | 23h 55m                                                                   |
+| Process pid       | 188871                                                                    |
+| Group             | 211465                                                                    |
+| Manager           | SLURM                                                                     |
+| Manager Job ID    | 211465                                                                    |
+| Last task started |                                                                           |
++-------------------+---------------------------------------------------------------------------+
+2026-09-09T13:09:29Z INFO HyperQueue v0.26.2
+2026-09-09T13:09:30Z INFO HyperQueue v0.26.2
+2026-09-09T13:09:30Z INFO SLURM environment detected
+2026-09-09T13:09:30Z INFO Detected 540609744896B of memory (503.48 GiB)
+2026-09-09T13:09:30Z INFO HyperQueue v0.26.2
+2026-09-09T13:09:30Z INFO Starting hyperqueue worker
+2026-09-09T13:09:30Z INFO Connecting to: cm4login2:40773
+2026-09-09T13:09:30Z INFO Listening on port 38455
+2026-09-09T13:09:30Z INFO Connecting to server (candidate addresses = [10.0.1.43:40773])
+2026-09-09T13:09:30Z INFO SLURM environment detected
+2026-09-09T13:09:30Z INFO Detected 540609757184B of memory (503.48 GiB)
++-------------------+---------------------------------------------------------------------------+
+| Worker            | 2                                                                         |
+| State             | RUNNING                                                                   |
+| Hostname          | cm4r15c02s07                                                              |
+| Started           | "2026-09-09T13:09:30.247922916Z"                                          |
+| Data provider     | cm4r15c02s07:38455                                                        |
+| Working directory | /dss/lxclscratch/00/ra98ror2/ra98ror2/tmp.XxoAeErcLo/hq-workeri87T9R/work |
+| Heartbeat         | 8s                                                                        |
+| Idle timeout      | 2h                                                                        |
+| Overview interval | None                                                                      |
+| Resources         | cpus: 112                                                                 |
+|                   | mem: 503.48 GiB                                                           |
+| Time Limit        | 23h 55m                                                                   |
+| Process pid       | 110954                                                                    |
+| Group             | 211465                                                                    |
+| Manager           | SLURM                                                                     |
+| Manager Job ID    | 211465                                                                    |
+| Last task started |                                                                           |
++-------------------+---------------------------------------------------------------------------+
+2026-09-09T13:09:30Z INFO Starting hyperqueue worker
+2026-09-09T13:09:30Z INFO SLURM environment detected
+2026-09-09T13:09:30Z INFO Detected 540609773568B of memory (503.48 GiB)
+2026-09-09T13:09:30Z INFO Connecting to: cm4login2:40773
+2026-09-09T13:09:30Z INFO Listening on port 42663
+2026-09-09T13:09:30Z INFO Connecting to server (candidate addresses = [10.0.1.43:40773])
+2026-09-09T13:09:30Z INFO Starting hyperqueue worker
++-------------------+---------------------------------------------------------------------------+
+| Worker            | 3                                                                         |
+| State             | RUNNING                                                                   |
+| Hostname          | cm4r13c03s02                                                              |
+| Started           | "2026-09-09T13:09:30.402434913Z"                                          |
+| Data provider     | cm4r13c03s02:42663                                                        |
+| Working directory | /dss/lxclscratch/00/ra98ror2/ra98ror2/tmp.XxoAeErcLo/hq-worker2pDJ3W/work |
+| Heartbeat         | 8s                                                                        |
+| Idle timeout      | 2h                                                                        |
+| Overview interval | None                                                                      |
+| Resources         | cpus: 112                                                                 |
+|                   | mem: 503.48 GiB                                                           |
+| Time Limit        | 23h 55m                                                                   |
+| Process pid       | 103776                                                                    |
+| Group             | 211465                                                                    |
+| Manager           | SLURM                                                                     |
+| Manager Job ID    | 211465                                                                    |
+| Last task started |                                                                           |
++-------------------+---------------------------------------------------------------------------+
+2026-09-09T13:09:30Z INFO Connecting to: cm4login2:40773
+2026-09-09T13:09:30Z INFO Listening on port 35923
+2026-09-09T13:09:30Z INFO Connecting to server (candidate addresses = [10.0.1.43:40773])
++-------------------+---------------------------------------------------------------------------+
+| Worker            | 4                                                                         |
+| State             | RUNNING                                                                   |
+| Hostname          | cm4r15c02s08                                                              |
+| Started           | "2026-09-09T13:09:30.540952594Z"                                          |
+| Data provider     | cm4r15c02s08:35923                                                        |
+| Working directory | /dss/lxclscratch/00/ra98ror2/ra98ror2/tmp.XxoAeErcLo/hq-workerleC8y5/work |
+| Heartbeat         | 8s                                                                        |
+| Idle timeout      | 2h                                                                        |
+| Overview interval | None                                                                      |
+| Resources         | cpus: 112                                                                 |
+|                   | mem: 503.48 GiB                                                           |
+| Time Limit        | 23h 55m                                                                   |
+| Process pid       | 162870                                                                    |
+| Group             | 211465                                                                    |
+| Manager           | SLURM                                                                     |
+| Manager Job ID    | 211465                                                                    |
+| Last task started |                                                                           |
++-------------------+---------------------------------------------------------------------------+
+2026-09-10T01:19:30Z INFO Waiting for finishing running tasks
+2026-09-10T01:30:04Z INFO All running tasks were finished
+IO error: Connection reset by peer (os error 104)
+
+Caused by:
+    Connection reset by peer (os error 104)
+srun: error: cm4r15c02s07: task 2: Exited with exit code 1
+2026-09-10T04:25:01Z INFO Worker received an external stop notification
+2026-09-10T04:25:01Z INFO Worker stopping
+2026-09-10T04:25:01Z INFO Worker received an external stop notification
+2026-09-10T04:25:01Z INFO Worker stopping
+slurmstepd: error: *** JOB 211465 ON cm4r13c03s01 CANCELLED AT 2026-09-10T06:25:01 ***
+slurmstepd: error: *** STEP 211465.0 ON cm4r13c03s01 CANCELLED AT 2026-09-10T06:25:01 ***
+2026-09-10T04:25:01Z INFO Waiting for finishing running tasks
+slurmstepd: error: *** JOB 211465 STEPD TERMINATED ON cm4r13c03s01 AT 2026-09-10T06:26:31 DUE TO JOB NOT ENDING WITH SIGNALS ***
