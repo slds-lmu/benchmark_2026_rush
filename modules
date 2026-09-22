@@ -2,12 +2,17 @@
 source ~/.conda_init
 conda activate benchmark_2026_rush
 
-export PATH="/dss/dsshome1/00/ra98ror2/benchmark_2026_rush:$PATH"
+# put hq on the PATH
+export PATH="$(cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%x}}")" && pwd):$PATH"
 
-alias sq='squeue -M cm4'
-alias sc='scancel -M cm4'
-alias sqa='scancel -M cm4 -u $USER'
-alias si='sinfo -M cm4'
+# The login node's default Slurm cluster is `inter`, 
+# so pin every Slurm command to cm4
+export SLURM_CLUSTERS=cm4
+
+alias sq='squeue'
+alias sc='scancel'
+alias sqa='scancel -u $USER'
+alias si='sinfo'
 
 # ----------------------
 # Git Aliases

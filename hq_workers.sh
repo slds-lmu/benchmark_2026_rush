@@ -5,9 +5,15 @@ set -euo pipefail
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# The login node's default Slurm cluster is `inter`, so pin sbatch to cm4.
+# Site-specific, see the "Site-specific settings" table in the README.
+# The login node's default Slurm cluster is `inter`, so pin sbatch to cm4. The
+# env var covers every Slurm command in the suite, which is why the commands
+# themselves carry no `--clusters` flag. On a single-cluster site, drop it.
 export SLURM_CLUSTERS=cm4
 
+# CPUS_PER_NODE is what `scontrol show node` reports as CPUs, not the physical
+# core count. With SMT on the two differ by a factor of two, and a worker sized
+# by cores leaves half the node idle.
 N_NODES=4
 CPUS_PER_NODE=112
 
@@ -18,13 +24,17 @@ mkdir -p "${PROJECT_DIR}/logs"
 # before the walltime so they can deregister instead of being killed.
 WORKER_CMD="source ${PROJECT_DIR}/hq_env.sh && exec ${PROJECT_DIR}/hq worker start --manager slurm --cpus ${CPUS_PER_NODE} --idle-timeout 2h --on-server-lost finish-running --time-limit 23h55m"
 
-sbatch --clusters=cm4 \
+# --mem=0 asks for a node's whole memory. Without it the job falls back to the
+# site's DefMemPerCPU, which on a node running one task per cpu is far below what
+# the node has.
+sbatch \
   --partition=cm4_std \
   --qos=cm4_std \
   --job-name=hq-workers \
   --nodes=${N_NODES} \
   --ntasks-per-node=${CPUS_PER_NODE} \
   --time=24:00:00 \
+  --mem=0 \
   --output="${PROJECT_DIR}/logs/hq_workers_%j.log" \
   --get-user-env \
   --export=NONE <<EOF

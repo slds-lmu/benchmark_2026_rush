@@ -13,6 +13,57 @@ The suite has two independent parts:
 | [`mbo/`](mbo/)   | Comparison of three distributed model-based optimization (MBO) strategies for hyperparameter tuning. |
 | [`rush_local/`](rush_local/) | The `rush/` micro-benchmarks, run locally instead of on a cluster (see [Running locally](#running-locally)). |
 
+## Runbook
+
+How to reproduce a full HPC run from a fresh clone. 
+Work through it top to bottom on a login node. 
+The sections below explain each step.
+
+```sh
+# 0. Make conda available on LRZ systems.
+#    On other systems e.g. `module load conda`.
+source ~/.conda_init
+
+# 1. Setup conda environment, `hq` binary, R library from renv.lock.
+./setup_hpc.sh
+
+# 2. Activate the conda environment and add hq to the PATH.
+conda activate benchmark_2026_rush
+export PATH="$(cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%x}}")" && pwd):$PATH"
+
+# 3. Adapt hq_workers.sh and hq_env.sh to the site.
+
+# 4. Bring up the backend. 
+#    Keep this in tmux. 
+./hq_server.sh
+./hq_workers.sh
+./redis_server.sh
+
+# 5. Run the benchmarks.
+#    Keep this in tmux as well.
+Rscript run_all.R
+
+# 6. Aggregate into the csv files.
+Rscript -e 'source("rush/results.R")'
+Rscript -e 'source("mbo/results.R")'
+
+# 7. Tear the backend down.
+./hq_clean.sh
+```
+
+### Site-specific settings
+
+What to check when moving the suite to another cluster. Only
+`N_NODES` × `CPUS_PER_NODE` changes the benchmark itself, the rest is plumbing.
+
+| Where                          | Setting                                   | Value here                                 | What to check                                                                                                |
+|--------------------------------|-------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| `hq_env.sh`                    | Slurm + conda init on the *compute* nodes | `module load slurm_setup`, `~/.conda_init` |                                                                                                              |
+| `hq_workers.sh`, `hq_clean.sh` | `SLURM_CLUSTERS`                          | `cm4`                                      | Only needed where the login node's default cluster is the wrong one. Drop the line on a single-cluster site. |
+| `hq_workers.sh`                | `--partition`, `--qos`                    | `cm4_std`                                  | Must permit a multi-node job. A tiny or single-node partition cannot run this.                               |
+| `hq_workers.sh`                | `N_NODES`, `CPUS_PER_NODE`                | 4 × 112                                    | The product must be at least 448.                                                                            |
+| `hq_workers.sh`                | `--time`                                  | `24:00:00`                                 | The worker `--time-limit` inside `WORKER_CMD`.                                                               |
+
 ## Requirements
 
 The full stack targets a Linux HPC login/compute environment:
@@ -31,13 +82,13 @@ The `setup_hpc.sh` script is a convenience wrapper that creates/activates a cond
 Re-running it on an existing conda environment is safe.
 
 Every dependency is pinned: conda packages to an exact version, CRAN packages to an exact version, and the two GitHub packages to a tag (`mlr3extralearners`) or a commit (`batchtools`, whose `makeClusterFunctionsHyperQueue()` is not in a release yet).
-The resulting library is captured in `renv.lock`, so to rebuild the exact same R library without re-resolving anything:
+`renv.lock` records the resulting library, and a clone installs from that lockfile. When `renv.lock` exists, both setup scripts run
 
 ```r
 renv::restore()
 ```
 
-`renv::install()` of the GitHub packages needs a `GITHUB_PAT` in `~/.Renviron`.
+Needs a `GITHUB_PAT` in `~/.Renviron` for the GitHub packages.
 
 `renv::status()` reports `DiceKriging`, `lightgbm`, `mlr3learners`, `qs2`, `rgenoud` and `xgboost` as "recorded but not used". That is deliberate: they are never `library()`-ed, only reached through mlr3 string ids such as `lrn("classif.lightgbm")`, so renv's dependency scan cannot see them and the setup scripts snapshot them by name instead. Removing them from `renv.lock` would break the benchmarks.
 
@@ -57,7 +108,6 @@ Paths and hosts that depend on the site are read from the environment, with defa
 
 The workers are submitted as a *single* multi-node SLURM job rather than through HyperQueue's automatic allocator.
 `mbo/initial_design.R` blocks until all 448 of its mirai daemons have connected, and SLURM allocates a job atomically, so one 4-node job brings every worker up at the same moment; four 1-node jobs would be scheduled independently and trickle in.
-The worker count is fixed anyway (448 daemons at one cpu each is exactly 4 nodes x 112 cpus), so there is nothing for the allocator to size.
 `hq_workers.sh` documents the two ways the allocator actively breaks here.
 
 This also means the workers run in the `cm4_std` partition (`MinNodes=2`, `MaxNodes=4`) instead of `cm4_tiny`, which caps a job at a single node.
