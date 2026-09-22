@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # The login node's default Slurm cluster is `inter`, so pin scancel to cm4.
 # Site-specific. Drop it on a single-cluster site.
 export SLURM_CLUSTERS=cm4

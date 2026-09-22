@@ -20,6 +20,7 @@ batchMap(function(n_parameters, payload_size, .job) {
 
   config = start_redis(.job)
   rush = RushWorker$new("benchmark", config)
+  on.exit(try(rush$connector$SHUTDOWN(), silent = TRUE), add = TRUE)
 
   xss = list(mlr3misc::set_names(replicate(n_parameters, list(runif(payload_size)), simplify = FALSE), paste0("x", seq(n_parameters))))
   yss = list(mlr3misc::set_names(replicate(n_parameters, list(runif(payload_size)), simplify = FALSE), paste0("y", seq(n_parameters))))
@@ -30,7 +31,6 @@ batchMap(function(n_parameters, payload_size, .job) {
     unit = "ms",
     times = 10000
   )
-  try({rush$connector$SHUTDOWN()}, silent = TRUE)
   res
 }, args = CJ(
   n_parameters = c(1, 10, 100),

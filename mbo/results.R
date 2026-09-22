@@ -5,7 +5,7 @@ library(mlr3misc)
 task_names = c("31" = "german-credit", "3945" = "kddcup09-appetency", "7592" = "adult", "189354" = "airlines")
 algorithms = c("cl_mbo", "central_mbo", "async_mbo")
 
-# one file per (algorithm, task, repl), written by mbo/experiment.R as each cell finishes
+# one file per (algorithm, task, repl), exported after submission returns.
 pattern = sprintf("^(%s)_([0-9]+)_([0-9]+)\\.rds$", paste(algorithms, collapse = "|"))
 files = list.files("mbo/results", pattern = pattern)
 if (!length(files)) {

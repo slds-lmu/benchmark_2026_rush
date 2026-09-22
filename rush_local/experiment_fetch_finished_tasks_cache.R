@@ -22,6 +22,7 @@ batchMap(function(n_tasks, n_parameters, payload_size, .job) {
 
   config = start_redis(.job)
   rush = RushWorker$new("benchmark", config)
+  on.exit(try(rush$connector$SHUTDOWN(), silent = TRUE), add = TRUE)
 
   setup = function() {
     rush$reset(workers = FALSE)
@@ -44,7 +45,6 @@ batchMap(function(n_tasks, n_parameters, payload_size, .job) {
     unit = "ms",
     setup = setup()
   )
-  try({rush$connector$SHUTDOWN()}, silent = TRUE)
   res
 }, args = CJ(
   n_tasks = c(1, 10, 100, 1e3, 1e4, 1e5),

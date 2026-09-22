@@ -4,7 +4,7 @@ library(microbenchmark)
 
 registry = "registries/"
 
-# summarize the 10,000 replicates of one microbenchmark job
+# Summarize the timing repetitions of one microbenchmark job in milliseconds.
 runtime_summary = function(reg, job_table) {
   stats = reduceResultsList(
     # pass the ids explicitly so the rows stay aligned with `job_table` even if a job is missing
